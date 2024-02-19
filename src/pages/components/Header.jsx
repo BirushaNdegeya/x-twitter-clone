@@ -6,6 +6,7 @@ import {
    MdOutlineGifBox,
    BsEmojiSmile,
    LuCalendarClock,
+   LiaStreamSolid
 } from "../../data/ImagesIcons";
 
 const Header = () => {
@@ -28,6 +29,7 @@ const Header = () => {
                   <div className="tweet-editor-actions">
                      <IoImageOutline />
                      <MdOutlineGifBox />
+                     <LiaStreamSolid />
                      <BsEmojiSmile />
                      <LuCalendarClock />
                   </div>
