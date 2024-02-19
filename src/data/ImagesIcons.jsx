@@ -6,6 +6,10 @@ import { BsEmojiSmile } from "react-icons/bs";
 import { LuCalendarClock } from "react-icons/lu";
 import { LiaStreamSolid } from "react-icons/lia";
 import { FaTwitter } from "react-icons/fa";
+import { BsFillPatchCheckFill } from "react-icons/bs";
+import { FaRegComment } from "react-icons/fa6";
+import { FcLikePlaceholder } from "react-icons/fc";
+import { GrUpload } from "react-icons/gr";
 
 export {
    birusha,
@@ -15,5 +19,9 @@ export {
    BsEmojiSmile,
    LuCalendarClock,
    LiaStreamSolid,
-   FaTwitter
+   FaTwitter,
+   BsFillPatchCheckFill,
+   FaRegComment,
+   FcLikePlaceholder,
+   GrUpload
 }

@@ -133,23 +133,32 @@ body{
 }
 
 .tweet-avatar {
-    /*height: 70px;*/
-    /*width: 70px;*/
-    flex: 0 0 70px;
+   /*height: 70px;*/
+   /*width: 70px;*/
+   flex: 0 0 70px;
 }
 
 .tweet-avatar img{
-    max-width: 100%;
-    max-height: 100px;
-    border-radius: 100%;
+   max-width: 100%;
+   max-height: 100px;
+   border-radius: 100%;
 }
 .tweet-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 30px;
-    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   gap: 30px;
+   width: 100%;
+}
+
+.my-flex {
+   display: flex;
+   align-items: center;
+}
+
+.my-flex > p {
+   margin-right: 10px;
 }
 .tweet-body{
     display: flex;
