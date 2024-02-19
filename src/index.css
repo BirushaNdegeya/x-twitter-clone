@@ -27,6 +27,7 @@ body{
    font-family: 'Inter', sans-serif;
    border-left: 1px solid #2F3336;
    border-right: 1px solid #2F3336;
+   margin: auto;
 }
 
 .header {
@@ -105,6 +106,8 @@ body{
 .tweet-editor-actions svg {
    color: #1D9BF0;
    cursor: pointer;
+   width: 24px;
+   height: 24px;
 }
 .tweet-editor-actions svg:hover {
    color: #fff;
