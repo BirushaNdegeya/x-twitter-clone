@@ -21,10 +21,24 @@ const CommentTweet = () => {
                <p className="tweet-title-details">.Oct 4</p>
             </div>
             <p>Hello everyone this is my first tweet</p>
+            <div className="tweet-actions">
+               <div className="tweet-action">
+                  <FaRegComment />
+               </div>
+               <div className="tweet-action">
+                  <FaRegComment />
+               </div>
+               <div className="tweet-action">
+                  <FaRegComment />
+               </div>
+               <div className="tweet-action">
+                  <FaRegComment />
+               </div>
+
+            </div>
             {/* <div className="tweet-title-details" style={{ display: 'flex'}}> */}
             </div>
             {/* <h1>This is a comment tweet</h1>
-            <FaRegComment />
             <FcLikePlaceholder color="white" />
             <GrUpload /> */}
          {/* </div> */}
