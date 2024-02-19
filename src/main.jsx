@@ -1,6 +1,7 @@
 import React, { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
 import Home from "./pages/Home";
+import './index.css';
 
 
 const App = () => {
