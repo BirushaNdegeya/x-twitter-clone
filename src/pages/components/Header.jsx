@@ -31,6 +31,7 @@ const Header = () => {
                      <BsEmojiSmile />
                      <LuCalendarClock />
                   </div>
+                  <button className="button">Tweet</button>
                </div>
             </div>
          </div>
