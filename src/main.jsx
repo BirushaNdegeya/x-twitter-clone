@@ -1,11 +1,12 @@
 import React, { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
+import Home from "./pages/Home";
 
 
 const App = () => {
    return (
       <React.Fragment>
-         <h1>X | Twitter Clone</h1>
+         <Home />
       </React.Fragment>
    );
 };
