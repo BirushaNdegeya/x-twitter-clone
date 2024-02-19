@@ -5,6 +5,7 @@ import { MdOutlineGifBox } from "react-icons/md";
 import { BsEmojiSmile } from "react-icons/bs";
 import { LuCalendarClock } from "react-icons/lu";
 import { LiaStreamSolid } from "react-icons/lia";
+import { FaTwitter } from "react-icons/fa";
 
 export {
    birusha,
@@ -13,5 +14,6 @@ export {
    MdOutlineGifBox,
    BsEmojiSmile,
    LuCalendarClock,
-   LiaStreamSolid
+   LiaStreamSolid,
+   FaTwitter
 }
