@@ -1,5 +1,12 @@
 import React from "react";
-import { birusha, FaWandMagicSparkles } from "../../data/ImagesIcons";
+import { 
+   birusha, 
+   FaWandMagicSparkles,
+   IoImageOutline,
+   MdOutlineGifBox,
+   BsEmojiSmile,
+   LuCalendarClock,
+} from "../../data/ImagesIcons";
 
 const Header = () => {
    return (
@@ -12,8 +19,20 @@ const Header = () => {
             <div className="avatar">
                <img src={birusha} alt="profile photo" />
             </div>
-            <p>What's happening</p>
-            <input type="text" />
+            <div className="tweet-editor-form">
+               <input 
+               type="text" 
+               placeholder="What's happening" 
+               className="tweet-editor-input" />
+               <div className="tweet-editor-buttons">
+                  <div className="tweet-editor-actions">
+                     <IoImageOutline />
+                     <MdOutlineGifBox />
+                     <BsEmojiSmile />
+                     <LuCalendarClock />
+                  </div>
+               </div>
+            </div>
          </div>
       </React.Fragment>
    );
