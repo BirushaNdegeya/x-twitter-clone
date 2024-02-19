@@ -9,11 +9,11 @@ const Header = () => {
             <FaWandMagicSparkles className="top-tweets" />
          </header>
          <div className="tweet-editor">
-            <div>
-               <img src={birusha} alt="profile photo" style={{ width: 24, height: 24}} />
-               <p>What's happening</p>
-               <input type="text" />
+            <div className="avatar">
+               <img src={birusha} alt="profile photo" />
             </div>
+            <p>What's happening</p>
+            <input type="text" />
          </div>
       </React.Fragment>
    );
