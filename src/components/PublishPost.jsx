@@ -22,11 +22,11 @@ const PublishPost = () => {
                className="tweet-editor-input" />
             <div className="tweet-editor-buttons">
                <div className="tweet-editor-actions">
-                  <i><img src={media} alt="" /></i>
-                  <i><img src={gif} alt="" /></i>
-                  <i><img src={emoji} alt="" /></i>
-                  <i><img src={poll} alt="" /></i>
-                  <i><img src={schedule} alt="" /></i>
+                  <i><img src={media} /></i>
+                  <i><img src={gif} /></i>
+                  <i><img src={emoji} /></i>
+                  <i><img src={poll} /></i>
+                  <i><img src={schedule} /></i>
                </div>
                <PrimaryButton titre="Tweet" />
             </div>

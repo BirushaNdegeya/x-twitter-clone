@@ -1,4 +1,8 @@
+import imgPost from '../assets/images/img-post.png';
 import birusha from '../assets/images/birusha.jpg';
+import cnn from '../assets/images/cnn.png';
+import twitterLogo from '../assets/images/twitter-logo.png';
+import times from '../assets/images/times.png';
 import timelineProp from '../assets/icons/Timeline-Prop.svg';
 import gif from '../assets/icons/Gif.svg';
 import emoji from '../assets/icons/Emoji.svg';
@@ -26,5 +30,9 @@ export {
    retweet,
    reply,
    twitter,
-   verified
+   verified,
+   cnn,
+   times,
+   twitterLogo,
+   imgPost
 }

@@ -4,7 +4,7 @@ import {
    love,
    retweet,
    reply
-} from '../data/ImagesIcons';
+} from '../../data/ImagesIcons';
 
 const TweetComment = () => {
    return (
@@ -23,7 +23,6 @@ const TweetComment = () => {
          </div>
          <div className="tweet-action">
             <i><img src={share} /></i>
-            <p>23.5K</p>
          </div>
       </div>
    );
