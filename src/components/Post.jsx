@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-   BsFillPatchCheckFill,
-   FaTwitter
+
 } from '../data/ImagesIcons';
 
 const Post = () => {

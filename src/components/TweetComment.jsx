@@ -1,18 +1,20 @@
 import React from 'react';
 import { 
    share,
-   love
+   love,
+   retweet,
+   reply
 } from '../data/ImagesIcons';
 
 const TweetComment = () => {
    return (
       <div className="tweet-actions">
          <div className="tweet-action">
-            <i><img src={share} /></i>
+            <i><img src={reply} /></i>
             <p>111K</p>
          </div>
          <div className="tweet-action">
-            <i><img src={share} /></i>
+            <i><img src={retweet} /></i>
             <p>12M</p>
          </div>
          <div className="tweet-action">

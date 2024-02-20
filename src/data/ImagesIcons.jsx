@@ -7,6 +7,8 @@ import media from '../assets/icons/Media.svg';
 import poll from '../assets/icons/Poll.svg';
 import share from '../assets/icons/Share.svg';
 import love from '../assets/icons/React.svg';
+import retweet from '../assets/icons/Retweet.svg';
+import reply from '../assets/icons/Reply.svg';
 
 
 export {
@@ -18,5 +20,7 @@ export {
    media,
    poll,
    share,
-   love
+   love,
+   retweet,
+   reply
 }

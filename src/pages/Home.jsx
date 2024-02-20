@@ -1,10 +1,10 @@
 import React from "react";
-import TweetComment from "../components/TweetComment";
+import Post from "../components/Post";
 
 const Home = () => {
    return (
       <div className="timeline">
-         <TweetComment />
+         <Post />
       </div>
    );
 };
