@@ -9,6 +9,8 @@ import share from '../assets/icons/Share.svg';
 import love from '../assets/icons/React.svg';
 import retweet from '../assets/icons/Retweet.svg';
 import reply from '../assets/icons/Reply.svg';
+import twitter from '../assets/icons/Twitter.svg';
+import verified from '../assets/icons/Verified.svg';
 
 
 export {
@@ -22,5 +24,7 @@ export {
    share,
    love,
    retweet,
-   reply
+   reply,
+   twitter,
+   verified
 }

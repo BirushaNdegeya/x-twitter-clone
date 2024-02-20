@@ -124,12 +124,12 @@ body{
    cursor: pointer;
 }
 .tweet{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 1.5rem 1rem;
-    border-bottom: 1px solid #2F3336;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   gap: 20px;
+   padding: 1.5rem 1rem;
+   border-bottom: 1px solid #2F3336;
 }
 
 .tweet-avatar {
@@ -152,10 +152,19 @@ body{
    width: 100%;
 }
 
+/* my custom stles */
 .my-flex {
    display: flex;
    align-items: center;
+   margin-bottom: 10px;
 }
+.my-flex > p {
+   margin-right: 20px;
+}
+.my-flex > i {
+   margin-right: 10px;
+}
+/* my custom styles */
 
 .my-flex > p {
    margin-right: 10px;
