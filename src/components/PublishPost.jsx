@@ -7,6 +7,7 @@ import {
    media,
    poll
 } from '../data/ImagesIcons';
+import PrimaryButton from "./PrimaryButtton";
 
 const PublishPost = () => {
    return (
@@ -27,7 +28,7 @@ const PublishPost = () => {
                   <i><img src={poll} alt="" /></i>
                   <i><img src={schedule} alt="" /></i>
                </div>
-               <button className="button">Tweet</button>
+               <PrimaryButton titre="Tweet" />
             </div>
          </div>
       </div>
