@@ -1,28 +1,26 @@
 import React from 'react';
 import { 
-   FaRegComment, 
-   GrUpload,
-   FaRegShareSquare,
-   FcLike
+   share,
+   love
 } from '../data/ImagesIcons';
 
 const TweetComment = () => {
    return (
       <div className="tweet-actions">
          <div className="tweet-action">
-            <FaRegComment />
+            <i><img src={share} /></i>
             <p>111K</p>
          </div>
          <div className="tweet-action">
-            <FcLike />
+            <i><img src={share} /></i>
             <p>12M</p>
          </div>
          <div className="tweet-action">
-            <FaRegShareSquare />
+            <i><img src={love} /></i>
             <p>25M</p>
          </div>
          <div className="tweet-action">
-            <GrUpload />
+            <i><img src={share} /></i>
             <p>23.5K</p>
          </div>
       </div>
