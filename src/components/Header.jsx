@@ -1,22 +1,20 @@
 import React from "react";
 import { 
-   birusha, 
-   FaWandMagicSparkles,
-   IoImageOutline,
-   MdOutlineGifBox,
-   BsEmojiSmile,
-   LuCalendarClock,
-   LiaStreamSolid
-} from "../../data/ImagesIcons";
+   birusha,
+   timelineProp
+} from "../data/ImagesIcons";
 
 const Header = () => {
    return (
       <React.Fragment>
          <header className="header">
             <h1 className="page-title">Home</h1>
+            <i>
+               <img src={timelineProp} alt="" />
+            </i>
             <FaWandMagicSparkles className="top-tweets" />
          </header>
-         <div className="tweet-editor">
+         {/* <div className="tweet-editor">
             <div className="avatar">
                <img src={birusha} alt="profile photo" />
             </div>
@@ -36,7 +34,7 @@ const Header = () => {
                   <button className="button">Tweet</button>
                </div>
             </div>
-         </div>
+         </div> */}
       </React.Fragment>
    );
 };
