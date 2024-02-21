@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header/Header";
-import PublishPost from "./PublishPost";
+import PublishPost from "./TweetEditor/PublishPost";
 import Post from "./Post";
 import { postData } from "../data/PostData";
 

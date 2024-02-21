@@ -1,5 +1,5 @@
 import React from "react";
-import PrimaryButton from '../PrimaryButtton';
+import PrimaryButton from '../buttons/Button';
 import Media from "./Media";
 import {
    gif,

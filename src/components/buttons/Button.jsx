@@ -1,9 +1,9 @@
 import React from 'react';
 
-const PrimaryButton = ({ titre }) =>{
+const Button = ({ titre }) =>{
    return (
       <button className="button">{titre}</button>
    );
 };
 
-export default PrimaryButton;
+export default Button;
