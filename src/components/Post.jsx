@@ -1,8 +1,8 @@
 import React from 'react';
 import {
    twitterLogo,
-   verified
 } from '../data/ImagesIcons';
+
 import TweetComment from './posts/PostComment';
 
 const Post = () => {
@@ -11,8 +11,6 @@ const Post = () => {
          <div className="tweet-avatar">
             <i><img src={twitterLogo} /></i>
          </div>
-
-
       </div>
    );
 };

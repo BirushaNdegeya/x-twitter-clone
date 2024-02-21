@@ -1,4 +1,5 @@
 import React from "react";
+import { verified } from '../../data/ImagesIcons';
 
 const PostHeader = () => {
    return (

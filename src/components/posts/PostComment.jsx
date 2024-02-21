@@ -6,7 +6,7 @@ import {
    reply
 } from '../../data/ImagesIcons';
 
-const TweetComment = () => {
+const PostComment = () => {
    return (
       <div className="tweet-actions">
          <div className="tweet-action">
@@ -28,4 +28,4 @@ const TweetComment = () => {
    );
 };
 
-export default TweetComment;
+export default PostComment;
