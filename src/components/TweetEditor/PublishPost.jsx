@@ -2,7 +2,7 @@ import React from "react";
 import { birusha } from '../../data/ImagesIcons';
 import PublishAvatar from "../publishposts/PublishAvatar";
 import PublishInput from "../publishposts/PublishInput";
-import PublishButtons from "../publishposts/PublishButtons";
+import Button from '../buttons/Button';
 
 const PublishPost = () => {
    return (
@@ -11,6 +11,7 @@ const PublishPost = () => {
          <div className="tweet-editor-form">
             <PublishInput />
             <PublishButtons />
+            <Button />
          </div>
       </div>
    )
