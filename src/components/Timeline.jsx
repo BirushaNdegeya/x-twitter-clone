@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Header";
+import Header from "./header/Header";
 import PublishPost from "./PublishPost";
 import Post from "./Post";
 import { postData } from "../data/PostData";

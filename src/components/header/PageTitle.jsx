@@ -1,9 +1,9 @@
 import React from "react";
 
-const Brand = () => {
+const PageTitle = () => {
    return (
       <h1>Home</h1>
    );
 };
 
-export default Brand;
+export default PageTitle;

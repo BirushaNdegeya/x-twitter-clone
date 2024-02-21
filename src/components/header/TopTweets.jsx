@@ -1,6 +1,6 @@
 import React from "react";
 
-const MagicHeaderLogo = ( { imgURL }) => {
+const TopTweets = ( { imgURL }) => {
    return (
       <i className="top-tweets">
          <img src={imgURL} />
@@ -8,4 +8,4 @@ const MagicHeaderLogo = ( { imgURL }) => {
    );
 };
 
-export default MagicHeaderLogo;
+export default TopTweets;
