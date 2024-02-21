@@ -1,4 +1,6 @@
 import React from "react";
+import Brand from "./header/Brand";
+import MagicHeaderLogo from "./header/MagicHeaderLogo";
 import {
    timelineProp
 } from "../data/ImagesIcons";
@@ -6,10 +8,8 @@ import {
 const Header = () => {
    return (
       <header className="header">
-         <h1 className="page-title">Home</h1>
-         <i className="top-tweets">
-            <img src={timelineProp} />
-         </i>
+         <Brand />
+         <MagicHeaderLogo imgURL={timelineProp} />
       </header>
    );
 };

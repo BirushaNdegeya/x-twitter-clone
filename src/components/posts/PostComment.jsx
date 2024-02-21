@@ -6,20 +6,21 @@ import {
    reply
 } from '../../data/ImagesIcons';
 
-const PostComment = () => {
+
+const PostComment = ({ userReply, userLove, userRetweet }) => {
    return (
       <div className="tweet-actions">
          <div className="tweet-action">
             <i><img src={reply} /></i>
-            <p>111K</p>
+            <p>{userReply}</p>
          </div>
          <div className="tweet-action">
             <i><img src={retweet} /></i>
-            <p>12M</p>
+            <p>{userRetweet}</p>
          </div>
          <div className="tweet-action">
             <i><img src={love} /></i>
-            <p>25M</p>
+            <p>{userLove}</p>
          </div>
          <div className="tweet-action">
             <i><img src={share} /></i>

@@ -156,7 +156,6 @@ body{
 .my-flex {
    display: flex;
    align-items: center;
-   margin-bottom: 10px;
 }
 .my-flex > p {
    margin-right: 20px;
