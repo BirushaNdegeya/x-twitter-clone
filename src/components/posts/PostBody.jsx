@@ -1,8 +1,14 @@
 import React from "react";
+import { imgPost } from '../../data/ImagesIcons';
 
 const PostBody = () => {
    return (
-      <h1>Post Body</h1>
+      <div>
+         <div className="tweet-text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim maxime laboriosam in itaque amet nostrum dolorem, consequatur cupiditate maiores minus facilis eos sed odio tempora nesciunt. Veniam harum blanditiis voluptates!</p>
+            <img src={imgPost} alt="un poste de new york times" />
+         </div>
+      </div>
    );
 };
 
