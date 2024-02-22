@@ -1,5 +1,4 @@
 import React from "react";
-import PrimaryButton from '../buttons/Button';
 import Media from "./Media";
 import {
    gif,
@@ -7,7 +6,7 @@ import {
    schedule,
    media,
    poll
-} from '../../data/ImagesIcons';
+} from '../../../data/ImagesIcons';
 
 const PublishButtons = () => {
    const arr = [media, gif, emoji, poll, schedule];
@@ -20,7 +19,6 @@ const PublishButtons = () => {
                )))
             }
          </div>
-         <PrimaryButton titre="Tweet" />
       </div> 
    );
 };

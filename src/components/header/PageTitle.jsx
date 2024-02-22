@@ -1,8 +1,8 @@
 import React from "react";
 
-const PageTitle = () => {
+const PageTitle = ( { title }) => {
    return (
-      <h1>Home</h1>
+      <h1>{title}</h1>
    );
 };
 

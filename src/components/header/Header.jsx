@@ -2,13 +2,13 @@ import React from "react";
 import PageTitle from "./PageTitle";
 import TopTweets from "./TopTweets";
 import {
-   timelineProp
+   timelineProp,
 } from "../../data/ImagesIcons";
 
 const Header = () => {
    return (
       <header className="header">
-         <PageTitle />
+         <PageTitle title={"Home"} />
          <TopTweets imgURL={timelineProp} />
       </header>
    );

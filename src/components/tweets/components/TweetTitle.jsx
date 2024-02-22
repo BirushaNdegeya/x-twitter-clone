@@ -1,7 +1,7 @@
 import React from "react";
-import { verified } from '../../data/ImagesIcons';
+import { verified } from '../../../data/ImagesIcons';
 
-const PostHeader = ({ userName, userTwitter, connectedHours}) => {
+const TweetTitle = ({ userName, userTwitter, connectedHours}) => {
    return (
       <div className="tweet-title">
          <div>
@@ -16,4 +16,4 @@ const PostHeader = ({ userName, userTwitter, connectedHours}) => {
    );
 };
 
-export default PostHeader;
+export default TweetTitle;

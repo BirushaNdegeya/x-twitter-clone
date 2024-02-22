@@ -109,6 +109,10 @@ body{
    width: 24px;
    height: 24px;
 }
+
+svg {
+   fill: #1D9BF0;
+}
 .tweet-editor-actions svg:hover {
    color: #fff;
 }

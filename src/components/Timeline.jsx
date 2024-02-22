@@ -1,30 +1,14 @@
 import React from "react";
-import Header from "./header/Header";
-import PublishPost from "./TweetEditor/PublishPost";
-import Post from "./Post";
-import { postData } from "../data/PostData";
+import Header from './header/Header';
+import TweetEditor from "./TweetEditor/TweetEditor";
+import Tweets from "./tweets/Tweets";
 
 const Timeline = () => {
    return (
       <div className="timeline">
          <Header />
-         <PublishPost />
-         {
-            postData.map((post) => (
-               <Post
-                  key={post.id}
-                  userPhoto={post.logo} 
-                  name={post.name} 
-                  nameTwitter={post.twitterName} 
-                  datePost={post.lastedTime}
-                  reply={post.likeText}
-                  retweet={post.commentText}
-                  love={post.loveText} 
-                  desc={post.bodyText}
-                  URL={post?.img}
-               />
-            ))
-         }
+         <TweetEditor />
+         <Tweets />
       </div>
    );
 };

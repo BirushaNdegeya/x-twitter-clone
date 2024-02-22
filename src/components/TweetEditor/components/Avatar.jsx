@@ -1,6 +1,6 @@
 import React from "react";
 
-const PublishAvatar = ({ imgURL}) =>  {
+const Avatar = ({ imgURL }) => {
    return (
       <div className="avatar">
          <img src={imgURL} alt="Profile Photo" />
@@ -8,4 +8,4 @@ const PublishAvatar = ({ imgURL}) =>  {
    );
 };
 
-export default PublishAvatar;
+export default Avatar;

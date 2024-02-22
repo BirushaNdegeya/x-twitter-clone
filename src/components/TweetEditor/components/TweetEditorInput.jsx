@@ -1,6 +1,6 @@
 import React from "react";
 
-const PublishInput = () => {
+const TweetEditorInput = () => {
    return (
       <input 
          type="text"
@@ -9,4 +9,4 @@ const PublishInput = () => {
    )
 };
 
-export default PublishInput;
+export default TweetEditorInput;
