@@ -1,36 +1,15 @@
 # KADEA ACADEMY - X Twitter/Clone solution
 
-## Table of contents
-
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### Screenshot
 
 ![](./public/assets/twitter-clone-design.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [MySolutionURL](https://github.com/BirushaNdegeya/x-twitter-clone)
+- Live Site URL: [LiveSiteURL](https://x-twitter-myclone.vercel.app/)
 
 ## My process
 
@@ -42,40 +21,69 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+When creating the X Twitter/clone React project provided by KADEA ACADEMY, I gained valuable insights into leveraging the power of React.js to build dynamic and scalable web applications.
 
-To see how you can add code snippets, see below:
+One of the fundamental concepts I learned was the effective use of props to facilitate communication between parent and child components. By passing data through props, I was able to seamlessly transmit information from higher-level components to their nested children, enhancing modularity and maintainability within the application's architecture.
+
+Moreover, I discovered the importance of reusability in React development. Through the creation of reusable components, I optimized my workflow and minimized redundant code across the project. This approach not only streamlined development but also fostered consistency and coherence throughout the application.
+
+By harnessing the flexibility of React components, I could efficiently integrate common functionalities across different parts of the website. This practice allowed me to avoid reinventing the wheel and focus more on implementing unique features and enhancing user experience.
+
+In essence, my experience with the X Twitter/clone React project underscored the significance of modular design, effective data management, and component reusability in React.js development. These principles have not only enriched my understanding of React but also equipped me with valuable tools to tackle complex web development challenges in future projects.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+
+   <head>
+      <meta charset="utf-8" />
+      <link rel="icon" type="image/svg+xml" href="./public/assets/Twitter.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>x | twitter clone</title>
+   </head>
+   <body>
+      <div id="root"></div>
+      <script type="module" src="/src/main.jsx"></script>
+   </body>
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+
+import React from "react";
+import Tweet from './Tweet';
+import { postData } from '../../data/PostData';
+
+const Tweets = () => {
+   return (
+      <div className="tweets">
+         { 
+            postData.map((tweet) => (
+               <Tweet
+                  key={tweet.id}
+                  userPhoto={tweet.logo} 
+                  name={tweet.name} 
+                  nameTwitter={tweet.twitterName} 
+                  datePost={tweet.lastedTime}
+                  reply={tweet.likeText}
+                  retweet={tweet.commentText}
+                  love={tweet.loveText} 
+                  desc={tweet.bodyText}
+                  URL={tweet?.img}
+               />
+            ))
+            }
+      </div>
+   );
+};
+
+export default Tweets;
+
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I am transitioning towards building all of my websites using the React JavaScript Library, while adhering to the Google Material Design principles. This shift enables me to leverage the powerful capabilities of React for efficient development, while also ensuring that my designs align with the established usability and aesthetic standards advocated by Google's Material Design principles.
 
 ### Useful resources
 
