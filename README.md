@@ -85,7 +85,7 @@ I am transitioning towards building all of my websites using the React JavaScrip
 
 ### Useful resources
 
-- [MDN JavaScript](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [React](https://reactjs.org/) - JS library
 
 ## Author
 
