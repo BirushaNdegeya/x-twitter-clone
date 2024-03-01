@@ -92,7 +92,7 @@ I am transitioning towards building all of my websites using the React JavaScrip
 - Website - [birushandegeya](https://myportfolio-chi-mocha.vercel.app/)
 - Frontend Mentor - [@BirushaNdegeya](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@BirushaNdegeya](https://twitter.com/BNdegeya62741)
-- LinkedIn - [] ()
+- LinkedIn - [BirushaNdegeya](https://www.linkedin.com/in/birusha-ndegeya-243b032a9)
 
 ## Acknowledgments
 
