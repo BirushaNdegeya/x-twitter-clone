@@ -2,8 +2,6 @@
 
 ## Overview
 
-### Screenshot
-
 ![](./public/assets/twitter-clone-design.png)
 
 ### Links
@@ -88,7 +86,6 @@ I am transitioning towards building all of my websites using the React JavaScrip
 ### Useful resources
 
 - [MDN JavaScript](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
@@ -99,3 +96,4 @@ I am transitioning towards building all of my websites using the React JavaScrip
 
 ## Acknowledgments
 
+It's truly invaluable to have mentors like Abel, Josue Makuta, and Thierry Bakera who dedicate themselves to teaching and sharing knowledge about technologies every day. Their commitment to providing real-life projects, such as the Twitter clone using cutting-edge technology like React, demonstrates their dedication to hands-on learning and practical application. With mentors like Abel, Josue, and Thierry, learners like yourself have the opportunity to not only gain theoretical knowledge but also immerse themselves in real-world scenarios, honing their skills and gaining practical experience. Their guidance and mentorship are instrumental in shaping your understanding of technology and preparing you for the challenges of the modern tech landscape. 
