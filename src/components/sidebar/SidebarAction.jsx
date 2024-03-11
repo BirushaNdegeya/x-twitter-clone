@@ -1,16 +1,19 @@
 import React from "react";
-import { twitter } from '../../data/ImagesIcons';
 
-export const SidebarTitle = () =>  {
+export const ProfileDetails = () => {
    return (
-      <i>
-        <img src={twitter} alt="twitter" /> 
-      </i>
+      <div>
+         <h1>photo</h1>
+      </div>
    )
 }
-const SidebarAction = () => {
+
+const SidebarAction = ({ icon, title }) => {
    return (
-      <div>Side bare | Icon</div>
+      <div className="tweet-action">
+         <img src={icon} alt="my icon" />
+         <p>{title}</p>
+      </div>
    );
 };
 

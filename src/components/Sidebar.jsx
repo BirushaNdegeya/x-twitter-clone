@@ -1,16 +1,21 @@
 import React from "react";
 import Button from "./buttons/Button";
-import SidebarAction, { SidebarTitle } from "./sidebar/SidebarAction";
+import { twitter, HomeFill, Explore, Notifications, Messages, Bookmarks, Lists, Profile, More } from '../data/ImagesIcons';
+import SidebarAction from "./sidebar/SidebarAction";
 
 const Sidebar = () => {
    return (
       <div className="sidebar">
-         <div className="header">
-            <SidebarTitle />
-         </div>
-         <h1>Side bar</h1>
-         <SidebarAction />
-         <Button titre='Tweet' />
+         <SidebarAction icon={twitter} />
+         <SidebarAction icon={HomeFill} title="Home" />
+         <SidebarAction icon={Explore} title="Explore" />
+         <SidebarAction icon={Notifications} title="Notifications" />
+         <SidebarAction icon={Messages} title="Messages" />
+         <SidebarAction icon={Bookmarks} title="Bookmarks" />
+         <SidebarAction icon={Lists} title="Lists" />
+         <SidebarAction icon={Profile} title="Profile" />
+         <SidebarAction icon={More} title="More" />
+         <Button titre="Tweet" />
       </div>
    );
 };

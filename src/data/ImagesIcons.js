@@ -15,9 +15,24 @@ import retweet from '../assets/icons/Retweet.svg';
 import reply from '../assets/icons/Reply.svg';
 import twitter from '../assets/icons/Twitter.svg';
 import verified from '../assets/icons/Verified.svg';
-
+import HomeFill from '../assets/icons/Home-Fill.svg';
+import Explore from '../assets/icons/Explore.svg';
+import Notifications from '../assets/icons/Notifications.svg';
+import Messages from '../assets/icons/Messages.svg';
+import Bookmarks from '../assets/icons/Bookmarks.svg';
+import Lists from '../assets/icons/Lists.svg';
+import Profile from '../assets/icons/Profile.svg';
+import More from '../assets/icons/More.svg';
+import SearchIcon from '../assets/icons/Search-Icon.svg';
 
 export {
+   SearchIcon,
+   More,
+   Profile,
+   Lists,
+   Bookmarks,
+   Messages,
+   Notifications,
    birusha,
    timelineProp,
    gif,
@@ -34,5 +49,7 @@ export {
    cnn,
    times,
    twitterLogo,
-   imgPost
+   imgPost,
+   HomeFill,
+   Explore
 }

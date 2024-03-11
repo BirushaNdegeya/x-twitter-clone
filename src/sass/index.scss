@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import './main';
+@import './sidebar.scss';
+@import './trends';
 
 *,
 *::after,
@@ -23,7 +26,7 @@ body{
 }
 
 .timeline {
-   flex: 0 0 800px;
+   flex: 0 0 700px;
    font-family: 'Inter', sans-serif;
    border-left: 1px solid #2F3336;
    border-right: 1px solid #2F3336;
@@ -241,12 +244,4 @@ svg {
    display: flex;
 }
 
-.home > .sidebar,
-.home > .trends {
-   flex: 1;
-}
-
-.home > .sidebar > .header {
-   border: 0px;
-}
 

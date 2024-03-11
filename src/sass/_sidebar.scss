@@ -1,0 +1,25 @@
+/* SIDEBAR */
+
+.sidebar {
+   padding: 1rem 24px;
+   padding-left: 32px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 16px;
+   p {
+     &:hover {
+         text-decoration: underline;
+         cursor: pointer;
+     } 
+   }
+}
+
+.home > .sidebar,
+.home > .trends {
+   flex: 1;
+   position: sticky;
+   top: 0px;
+   height: 100vh;
+}
+

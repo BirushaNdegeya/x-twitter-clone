@@ -1,9 +1,10 @@
 import React from "react";
+import { TrendsInput } from '../components/trends/TrendsComponents';
 
 const Trends = () => {
    return (
       <div className="trends">
-         <h1>Trends</h1>
+         <TrendsInput />
       </div>
    );
 };

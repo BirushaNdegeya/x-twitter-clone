@@ -1,0 +1,40 @@
+.trends {
+   margin: 0px 1rem;
+   .trend-input {
+      margin-top: 16px;
+      background: $TREND_BG;
+      height: 42px;
+      border-radius: 42px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      input {
+         outline: none;
+         font: inherit;
+         background: transparent;
+         border: 0px;
+         color: #fff;
+      }
+   }
+}
+
+
+// .input {
+//    width: 100%;
+   
+//    /* Trends Color */
+//    background: #202327;
+// }
+
+
+// /* Trending/Lists */
+// .dark {
+//    // position: absolute;
+//    width: 350px;
+//    height: 426px;
+//    left: 0px;
+//    top: 60px;
+//    background-color: #202327;
+//    border-radius: 15px;
+
+// }
