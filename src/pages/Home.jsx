@@ -5,11 +5,11 @@ import Trends from "../components/Trends";
 
 const Home = () => {
    return (
-      <React.Fragment>
+      <div className="home">
          <Sidebar />
          <Timeline />
          <Trends />
-      </React.Fragment>
+      </div>
    );
 };
 

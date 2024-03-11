@@ -229,8 +229,24 @@ svg {
 }
 
 .tweet-action{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
 }
+
+/* CSS */
+
+.home {
+   display: flex;
+}
+
+.home > .sidebar,
+.home > .trends {
+   flex: 1;
+}
+
+.home > .sidebar > .header {
+   border: 0px;
+}
+

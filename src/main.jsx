@@ -1,6 +1,7 @@
 import React, { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
 import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
 import { 
    RouterProvider,
    createBrowserRouter,
@@ -11,7 +12,7 @@ const router = createBrowserRouter([
    {
       path: '/',
       element: <Home />,
-      errorElement: <h1>Not Found!</h1>
+      errorElement: <NotFound />
    }
 ]);
 
