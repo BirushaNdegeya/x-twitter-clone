@@ -1,20 +1,23 @@
 import React, { StrictMode } from "react";
 import ReactDOM from 'react-dom/client';
 import Home from "./pages/Home";
+import { 
+   RouterProvider,
+   createBrowserRouter,
+} from 'react-router-dom';
 import './index.css';
 
-
-const App = () => {
-   return (
-      <React.Fragment>
-         <Home />
-      </React.Fragment>
-   );
-};
+const router = createBrowserRouter([
+   {
+      path: '/',
+      element: <Home />,
+      errorElement: <h1>Not Found!</h1>
+   }
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <StrictMode>
-      <App />
+      <RouterProvider router={router} />
    </StrictMode>
 );
