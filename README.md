@@ -2,7 +2,7 @@
 
 ## Overview
 
-![](./public/assets/twitter-clone-design.png)
+![](./public/assets/twitter-x-clone.png)
 
 ### Links
 
