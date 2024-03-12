@@ -13,3 +13,11 @@ export const TrendsInput = () => {
       </div>
    );
 };
+
+export const TrendsForYou = () => {
+   return (
+      <div className="trend-for-you">
+         <h1>Trends For You</h1>
+      </div>
+   )
+}
