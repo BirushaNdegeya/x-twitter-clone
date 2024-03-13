@@ -6,4 +6,9 @@ const Button = ({ titre }) =>{
    );
 };
 
+export const ButtonOutline = ({ titre }) => {
+   return (
+      <button className='button outline'>{titre}</button>
+   )
+}
 export default Button;

@@ -1,5 +1,22 @@
+.home > .trends {
+   flex: 1.5;
+   position: sticky;
+   top: 0px;
+   height: 100vh;
+}
+
 .trends {
    margin: 0px 1rem;
+   .outline {
+      background: transparent;
+      padding: 0px;
+      height: 40px;
+      font-weight: 500;
+      color: $PRIMARY_COLOR;
+      &:hover {
+         text-decoration: underline;
+      }
+   }
    .trend-input {
       margin-top: 16px;
       background: $TREND_BG;
@@ -16,6 +33,13 @@
          color: #fff;
       }
    }
+}
+
+.trend-box {
+   background: $TREND_BG;
+   margin: 16px 0px;
+   border-radius: $BORDER_RADIUS_BOX;
+   padding: $PADDING_BOX;
 }
 // djdj
 

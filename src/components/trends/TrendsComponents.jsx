@@ -1,5 +1,6 @@
 import React from "react";
 import { SearchIcon } from '../../data/ImagesIcons';
+import { ButtonOutline } from '../../components/buttons/Button';
 
 export const TrendsInput = () => {
    return (
@@ -16,8 +17,18 @@ export const TrendsInput = () => {
 
 export const TrendsForYou = () => {
    return (
-      <div className="trend-for-you">
-         <h1>Trends For You</h1>
+      <div className="trend-box">
+         <h3>Trends for you</h3>
+         <ButtonOutline titre="show more" />
+      </div>
+   );
+};
+
+export const TrendsWhoToFollow = () => {
+   return (
+      <div className="trend-box">
+         <h3>Who to follow</h3>
+         <ButtonOutline titre="show more" />
       </div>
    )
 }
