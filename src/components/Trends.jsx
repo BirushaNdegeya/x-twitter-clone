@@ -1,5 +1,5 @@
 import React from "react";
-import { TrendsInput, TrendsForYou, TrendsWhoToFollow } from '../components/trends/TrendsComponents';
+import { TrendsInput, TrendsForYou, TrendsWhoToFollow, TrendsLink } from '../components/trends/TrendsComponents';
 
 const Trends = () => {
    return (
@@ -7,6 +7,7 @@ const Trends = () => {
          <TrendsInput />
          <TrendsForYou />
          <TrendsWhoToFollow />
+         <TrendsLink />
       </div>
    );
 };

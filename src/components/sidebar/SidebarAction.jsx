@@ -12,7 +12,7 @@ const SidebarAction = ({ icon, title }) => {
    return (
       <div className="tweet-action">
          <img src={icon} alt="my icon" />
-         <p>{title}</p>
+         <h4>{title}</h4>
       </div>
    );
 };

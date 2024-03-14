@@ -1,11 +1,52 @@
-.home > .trends {
-   flex: 1.5;
-   position: sticky;
-   top: 0px;
-   height: 100vh;
-}
-
 .trends {
+   flex: 1.7;
+   position: relative;
+   .trend-input {
+      position: sticky;
+      top: 16px;
+      z-index: 100;
+   }
+
+
+   .who-to-follow-body {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:not(:last-child) {
+         margin-bottom: 16px;
+      }
+      
+      & > i {
+         flex: 0.5;
+         align-items: center;
+      }
+
+      & > div {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex: 2;
+      }
+   }
+
+   .trend-title, .trends-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+   }
+
+   .trends-body {
+      font-size: 12px;
+   }
+   // .trends-body {
+   //    display: flex;
+   //    align-items: center;
+   //    justify-content: space-between;
+   // }
+
    margin: 0px 1rem;
    .outline {
       background: transparent;

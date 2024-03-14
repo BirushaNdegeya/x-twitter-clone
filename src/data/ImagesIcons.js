@@ -24,8 +24,12 @@ import Lists from '../assets/icons/Lists.svg';
 import Profile from '../assets/icons/Profile.svg';
 import More from '../assets/icons/More.svg';
 import SearchIcon from '../assets/icons/Search-Icon.svg';
+import Settings from '../assets/icons/Settings.svg';
+import More2 from '../assets/icons/More-2.svg';
 
 export {
+   More2,
+   Settings,
    SearchIcon,
    More,
    Profile,

@@ -11,4 +11,10 @@ export const ButtonOutline = ({ titre }) => {
       <button className='button outline'>{titre}</button>
    )
 }
+
+export const ButtonFollow = ({title}) => {
+   return (
+      <button className='button follow'>{title}</button>
+   )
+}
 export default Button;
