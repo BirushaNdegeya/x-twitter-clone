@@ -1,6 +1,6 @@
 import React from "react";
 import { SearchIcon, Settings, More2, verified } from '../../data/ImagesIcons';
-import { ButtonOutline } from '../../components/buttons/Button';
+import Button from "../buttons/Button";
 import { postData }from '../../data/PostData';
 import { Link } from "react-router-dom";
 
@@ -12,22 +12,6 @@ const f = postData.map((item) => (
       logo: item.logo,
    }
 )).filter(el => el.id <= 3);
-
-
-console.log(f)
-
-export const TrendsInput = () => {
-   return (
-      <div className="trend-input">
-         <img src={SearchIcon} alt="" />
-         <input
-            className="input"
-            type="text"
-            placeholder="Search Tweet"
-         />
-      </div>
-   );
-};
 
 const TrendsTitle = ({ title, imgURL }) => {
    return (
@@ -69,7 +53,10 @@ export const TrendsForYou = () => {
          <TrendsForYouBody />
          <TrendsForYouBody />
 
-         <ButtonOutline titre="show more" />
+         <Button 
+            title="Show More"
+            className="btn-outline"
+         />
 
       </div>
    );
@@ -86,7 +73,7 @@ const TrendsWhoToFollowBody = ({ imgURL, tweetName, title }) => {
                <p>{title}</p>
                <p>{tweetName}</p>
             </div>
-            <button className="button">Follow</button>
+            <button className="btn">Follow</button>
          </div>
       </div>
    );
@@ -124,7 +111,10 @@ export const TrendsWhoToFollow = () => {
             ))
          }
 
-         <ButtonOutline titre="show more" />
+         <Button 
+            title="Show More"
+            className="btn-outline"
+         />
 
       </div>
    )

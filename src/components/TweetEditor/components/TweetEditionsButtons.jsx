@@ -6,7 +6,10 @@ const TweetEditorButtons = () => {
    return (
       <div className="tweet-editor-buttons">
          <TweetEditorActions />
-         <Button titre={"Tweet"} />
+         <Button 
+            primary="primary"
+            title={"Tweet"} 
+         />
       </div>
    );
 };

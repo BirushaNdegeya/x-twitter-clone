@@ -15,10 +15,10 @@
 
 
 body{
-   background-color: black;
-   color: white;
+   background-color: $BLACK;
+   color: $WHITE;
    margin: 0 auto;
-   max-width: 1800px;
+   width: 100%;
 }
 
 #root{
@@ -63,7 +63,6 @@ body{
 
 .avatar {
    flex: 0 0 70px;
-   /*padding: 0 rem;*/
 }
 
 .avatar img {
@@ -99,13 +98,14 @@ body{
    display: flex;
    align-items: center;
    justify-content: flex-start;
-   /*padding: 0.8rem 0;*/
    gap: 1rem;
 }
+
 .tweet-editor-actions button {
    background-color: transparent;
    border: none;
 }
+
 /* custom style */
 .tweet-editor-actions svg {
    color: #1D9BF0;
@@ -121,16 +121,7 @@ svg {
    color: #fff;
 }
 /* custom style */
-.button {
-   text-transform: capitalize;
-   padding: .7rem 1.5rem;
-   border: none;
-   border-radius: 50px;
-   background-color: #1D9BF0;
-   color: white;
-   font-size: 1rem;
-   cursor: pointer;
-}
+
 .tweet{
    display: flex;
    justify-content: flex-start;

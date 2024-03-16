@@ -6,6 +6,11 @@ import SidebarAction from "./sidebar/SidebarAction";
 import SidebarProfile from "./sidebar/SidebarProfile";
 import { Link, NavLink } from "react-router-dom";
 
+/**
+ * Sidebar UI
+ * @returns {React.JSX.Element}
+ */
+
 const Sidebar = () => {
    const navLinkStyle = {
       background: '#202327'
@@ -77,7 +82,8 @@ const Sidebar = () => {
                         title="More" />
                </NavLink>
             <Button 
-               titre="Tweet" 
+               title="Tweet" 
+               primary="primary"
             />
          </div>
          <SidebarProfile 

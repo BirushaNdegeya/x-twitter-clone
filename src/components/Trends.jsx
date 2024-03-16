@@ -1,5 +1,11 @@
 import React from "react";
-import { TrendsInput, TrendsForYou, TrendsWhoToFollow, TrendsLink } from '../components/trends/TrendsComponents';
+import TrendsInput from "./trends/TrendsInput";
+import { TrendsForYou, TrendsWhoToFollow, TrendsLink } from '../components/trends/TrendsComponents';
+
+/**
+ * Trends UI Component
+ * @returns {React.JSX.Element}
+ */
 
 const Trends = () => {
    return (

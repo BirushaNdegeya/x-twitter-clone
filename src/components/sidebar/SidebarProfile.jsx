@@ -1,5 +1,11 @@
 import React from "react";
 
+/**
+ * Sibebar Profile UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
+
 const SidebarProfile = ({ profURl, privURL, morURL }) => {
 
    const imageStyle = {

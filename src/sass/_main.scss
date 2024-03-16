@@ -1,5 +1,7 @@
 // VARIABLES
 
+$WHITE: #ffffff;
+$BLACK: #000000;
 $TREND_BG: #202327;
 $BORDER_RADIUS_BOX: 16px;
 $PADDING_BOX: 16px;
@@ -7,6 +9,29 @@ $PRIMARY_COLOR: #1D9BF0;
 
 
 // BUTTONS
+
+.btn {
+   text-transform: capitalize;
+   padding: .7rem 1.5rem;
+   border: none;
+   border-radius: 50px;
+   font-size: 1rem;
+   cursor: pointer;
+
+   // primary buttons
+
+   &-primary {
+      color: $WHITE;
+      background-color: #1D9BF0;
+   }
+
+   // outline buttons
+
+   &-outline {
+      padding: 0;
+      background: transparent;
+   }
+}
 
 button:hover {
    opacity: .8;

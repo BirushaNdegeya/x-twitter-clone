@@ -1,6 +1,11 @@
 import React from "react";
 import { FaRegFaceSurprise } from "react-icons/fa6";
 
+/**
+ * NotFound Screen UI Component
+ * @returns {React.JSX.Element}
+ */
+
 const NotFound = () => {
    return (
       <main 
