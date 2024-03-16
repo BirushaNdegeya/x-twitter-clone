@@ -1,6 +1,8 @@
+// TRENDS
+
 .trends {
    flex: 1.7;
-   position: relative;
+
    .trend-input {
       position: sticky;
       top: 16px;
@@ -41,11 +43,8 @@
    .trends-body {
       font-size: 12px;
    }
-   // .trends-body {
-   //    display: flex;
-   //    align-items: center;
-   //    justify-content: space-between;
-   // }
+
+
 
    margin: 0px 1rem;
    .outline {
@@ -82,25 +81,3 @@
    border-radius: $BORDER_RADIUS_BOX;
    padding: $PADDING_BOX;
 }
-// djdj
-
-
-// .input {
-//    width: 100%;
-   
-//    /* Trends Color */
-//    background: #202327;
-// }
-
-
-// /* Trending/Lists */
-// .dark {
-//    // position: absolute;
-//    width: 350px;
-//    height: 426px;
-//    left: 0px;
-//    top: 60px;
-//    background-color: #202327;
-//    border-radius: 15px;
-
-// }

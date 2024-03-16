@@ -4,6 +4,7 @@ import TweetEditor from "./TweetEditor/TweetEditor";
 import Tweets from "./tweets/Tweets";
 
 const Timeline = () => {
+   
    return (
       <div className="timeline">
          <Header />

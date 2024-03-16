@@ -26,8 +26,12 @@ import More from '../assets/icons/More.svg';
 import SearchIcon from '../assets/icons/Search-Icon.svg';
 import Settings from '../assets/icons/Settings.svg';
 import More2 from '../assets/icons/More-2.svg';
+import Private from '../assets/icons/Private.svg';
+import ProfilePhoto from '../assets/icons/Profile-Photo.svg';
 
 export {
+   Private,
+   ProfilePhoto,
    More2,
    Settings,
    SearchIcon,

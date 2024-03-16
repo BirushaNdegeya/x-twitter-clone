@@ -1,4 +1,4 @@
-// Variables
+// VARIABLES
 
 $TREND_BG: #202327;
 $BORDER_RADIUS_BOX: 16px;
@@ -6,9 +6,56 @@ $PADDING_BOX: 16px;
 $PRIMARY_COLOR: #1D9BF0;
 
 
-// BUTTON
+// BUTTONS
+
+button:hover {
+   opacity: .8;
+}
 
 .outline {
    background: #fff;
    color: #333;
+}
+
+// FLEX
+
+.flex {
+   display: flex;
+
+   // align-items:  center;
+
+   &-ai-c {
+      align-items: center;
+   }
+
+   // justify-content: center;
+
+   &-jc-c {
+      justify-content: center;
+   } 
+
+   // flex direction: column;
+
+   &-fd-c {
+      flex-direction: column;
+   }
+
+   // justify-content: space between;
+
+   &-jc-sb {
+      justify-content: space-between;
+   }
+
+   // justity-content: space around
+
+   &-jc-sa {
+      justify-content: space-around;
+   }
+
+   // justify-content: space-evenly;
+
+   &-jc-se {
+      justify-content: space-evenly;
+   }
+   
 }
