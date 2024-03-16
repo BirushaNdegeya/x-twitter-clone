@@ -1,6 +1,8 @@
 import React from "react";
 import TrendsInput from "./trends/TrendsInput";
-import { TrendsForYou, TrendsWhoToFollow, TrendsLink } from '../components/trends/TrendsComponents';
+import TrendsLink from "./trends/TrendsLink";
+import TrendsForYou from "./trends/TrendsForYou";
+import TrendsWhoToFollow from "./trends/TrendsWhoToFollow";
 
 /**
  * Trends UI Component
@@ -10,6 +12,7 @@ import { TrendsForYou, TrendsWhoToFollow, TrendsLink } from '../components/trend
 const Trends = () => {
    return (
       <div className="trends">
+         <div className="separator"></div>
          <TrendsInput />
          <TrendsForYou />
          <TrendsWhoToFollow />

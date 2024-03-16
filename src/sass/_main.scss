@@ -30,11 +30,16 @@ $PRIMARY_COLOR: #1D9BF0;
    &-outline {
       padding: 0;
       background: transparent;
+      color: $PRIMARY_COLOR;
+      // hover state
+      &:hover {
+         text-decoration: underline;
+      }
    }
 }
 
 button:hover {
-   opacity: .8;
+   opacity: .6;
 }
 
 .outline {

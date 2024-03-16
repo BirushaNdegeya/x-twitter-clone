@@ -2,6 +2,14 @@
 
 .trends {
    flex: 1.7;
+   position: relative;
+
+   .separator {
+      position: fixed;
+      width: 100%;
+      background: $BLACK;
+      height: 73px;
+   }
 
    .trend-input {
       position: sticky;
@@ -71,6 +79,19 @@
          background: transparent;
          border: 0px;
          color: #fff;
+      }
+   }
+
+   footer {
+      margin-right: 16px;
+      a {
+         text-decoration: none;
+         color: $WHITE;
+         margin-right: 16px;
+         // hover state
+         &:hover {
+            text-decoration: underline;
+         }
       }
    }
 }

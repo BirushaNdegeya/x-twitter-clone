@@ -46,7 +46,7 @@ const router = createBrowserRouter([
             element: <More />
          },
          {
-            path: '/profile',
+            path: '/profile/:name',
             element: <Profile />
          },
          {

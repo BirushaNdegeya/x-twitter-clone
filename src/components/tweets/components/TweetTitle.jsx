@@ -1,9 +1,14 @@
 import React from "react";
 import { verified } from '../../../data/ImagesIcons';
+import { Link } from "react-router-dom";
 
 const TweetTitle = ({ userName, userTwitter, connectedHours}) => {
+   const tweetTitleStyle = {
+      textDecoration: 'none', 
+      color: '#fff'
+   };
    return (
-      <div className="tweet-title">
+      <div to="/profile/info" className="tweet-title" style={tweetTitleStyle}>
          <div>
             <div className="my-flex">
                <p className="tweet-title-author">{userName}</p>

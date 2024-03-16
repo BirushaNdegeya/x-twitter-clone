@@ -7,7 +7,7 @@ import SidebarProfile from "./sidebar/SidebarProfile";
 import { Link, NavLink } from "react-router-dom";
 
 /**
- * Sidebar UI
+ * Sidebar UI Component
  * @returns {React.JSX.Element}
  */
 

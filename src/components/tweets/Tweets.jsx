@@ -8,6 +8,7 @@ const Tweets = () => {
          { 
             postData.map((tweet) => (
                <Tweet
+                  profileDetails={tweet.name}
                   key={tweet.id}
                   userPhoto={tweet.logo} 
                   name={tweet.name} 

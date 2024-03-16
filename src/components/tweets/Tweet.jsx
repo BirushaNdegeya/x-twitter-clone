@@ -1,10 +1,16 @@
 import React from 'react';
 import TweetAvatar from './components/TweetAvatar';
 import TweetContent from './components/TweetContent';
+import { Link } from 'react-router-dom';
 
-const Tweet = ({ userPhoto, nameTwitter, datePost, name, reply, retweet, love, desc, URL }) => {
+
+const Tweet = ({ userPhoto, nameTwitter, datePost, name, reply, retweet, love, desc, URL, profileDetails }) => {
+   const tweetStyle = {
+      textDecoration: 'none',
+      color: '#fff',
+   }
    return (
-      <div className="tweet">
+      <Link to={`/profile/${profileDetails}`} className="tweet" style={tweetStyle}>
          <TweetAvatar 
             userImage={userPhoto} />
          <TweetContent 
@@ -17,7 +23,7 @@ const Tweet = ({ userPhoto, nameTwitter, datePost, name, reply, retweet, love, d
             myUserTwitterName={nameTwitter}
             agoHour={datePost}
          />
-      </div>
+      </Link>
    );
 };
 
