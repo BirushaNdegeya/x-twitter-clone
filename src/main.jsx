@@ -10,6 +10,7 @@ import Messages from "./pages/Messages";
 import More from "./pages/More";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/Profile";
+import ProfilePost from "./pages/ProfilePost";
 import { 
    RouterProvider,
    createBrowserRouter,
@@ -46,7 +47,11 @@ const router = createBrowserRouter([
             element: <More />
          },
          {
-            path: '/profile/:name',
+            path: '/profile/:id',
+            element: <ProfilePost />
+         },
+         {
+            path: '/profile',
             element: <Profile />
          },
          {

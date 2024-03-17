@@ -1,10 +1,17 @@
 import React from "react";
 import TweetBody from "./TweetBody";
 
-const TweetContent = ({ userReply, userRetweet, userLove, userMessage, tweetSrc, myUserName, myUserTwitterName, agoHour}) => {
+/**
+ * Tweet Content UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
+
+const TweetContent = ({ linkId, userReply, userRetweet, userLove, userMessage, tweetSrc, myUserName, myUserTwitterName, agoHour}) => {
    return (
       <div className="tweet-content">
          <TweetBody 
+            linkId={linkId}
             uName={myUserName}
             uTwitter={myUserTwitterName}
             lastHours={agoHour}

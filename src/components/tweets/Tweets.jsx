@@ -2,13 +2,17 @@ import React from "react";
 import Tweet from './Tweet';
 import { postData } from '../../data/PostData';
 
+/**
+ * Tweets UI Component
+ * @returns {React.JSX.Element}
+ */
+
 const Tweets = () => {
    return (
       <div className="tweets">
          { 
             postData.map((tweet) => (
                <Tweet
-                  profileDetails={tweet.name}
                   key={tweet.id}
                   userPhoto={tweet.logo} 
                   name={tweet.name} 
@@ -19,6 +23,7 @@ const Tweets = () => {
                   love={tweet.loveText} 
                   desc={tweet.bodyText}
                   URL={tweet?.img}
+                  linkId={tweet.id}
                />
             ))
             }

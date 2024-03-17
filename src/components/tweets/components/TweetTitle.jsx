@@ -2,13 +2,22 @@ import React from "react";
 import { verified } from '../../../data/ImagesIcons';
 import { Link } from "react-router-dom";
 
-const TweetTitle = ({ userName, userTwitter, connectedHours}) => {
+/**
+ * Tweet Title UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
+
+const TweetTitle = ({ linkId, userName, userTwitter, connectedHours}) => {
    const tweetTitleStyle = {
       textDecoration: 'none', 
       color: '#fff'
    };
    return (
-      <div to="/profile/info" className="tweet-title" style={tweetTitleStyle}>
+      <Link 
+         to={`/profile/${linkId}`} 
+         className="tweet-title" 
+         style={tweetTitleStyle}>
          <div>
             <div className="my-flex">
                <p className="tweet-title-author">{userName}</p>
@@ -17,7 +26,7 @@ const TweetTitle = ({ userName, userTwitter, connectedHours}) => {
                <p className="tweet-title-details">{connectedHours}</p>
             </div>
          </div>
-      </div>
+      </Link>
    );
 };
 

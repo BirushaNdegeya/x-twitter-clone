@@ -1,19 +1,22 @@
 import React from 'react';
 import TweetAvatar from './components/TweetAvatar';
 import TweetContent from './components/TweetContent';
-import { Link } from 'react-router-dom';
 
+/**
+ * Tweet UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
 
-const Tweet = ({ userPhoto, nameTwitter, datePost, name, reply, retweet, love, desc, URL, profileDetails }) => {
-   const tweetStyle = {
-      textDecoration: 'none',
-      color: '#fff',
-   }
+const Tweet = ({ linkId, userPhoto, nameTwitter, datePost, name, reply, retweet, love, desc, URL }) => {
    return (
-      <Link to={`/profile/${profileDetails}`} className="tweet" style={tweetStyle}>
+      <div className='tweet'>
          <TweetAvatar 
-            userImage={userPhoto} />
+            userImage={userPhoto}
+            linkId={linkId}
+         />
          <TweetContent 
+            linkId={linkId}
             tweetSrc={URL}
             userMessage={desc}
             userReply={reply}
@@ -23,7 +26,7 @@ const Tweet = ({ userPhoto, nameTwitter, datePost, name, reply, retweet, love, d
             myUserTwitterName={nameTwitter}
             agoHour={datePost}
          />
-      </Link>
+      </div>
    );
 };
 

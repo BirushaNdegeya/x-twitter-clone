@@ -1,8 +1,17 @@
 import React from "react";
 
-const TweetAction = ( { icon, text }) => {
+/**
+ * Tweet Action UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
+
+const TweetAction = ( { icon, text, handleClick }) => {
    return (
-      <div className="tweet-action">
+      <div 
+         onClick={handleClick}
+         className="tweet-action" 
+         style={{ cursor: 'pointer' }}>
          <i><img src={icon} /></i>
          <p>{text}</p>
       </div>

@@ -11,13 +11,13 @@ import TrendsWhoToFollow from "./trends/TrendsWhoToFollow";
 
 const Trends = () => {
    return (
-      <div className="trends">
+      <aside className="trends">
          <div className="separator"></div>
          <TrendsInput />
          <TrendsForYou />
          <TrendsWhoToFollow />
          <TrendsLink />
-      </div>
+      </aside>
    );
 };
 

@@ -8,11 +8,18 @@ import {
 import TweetAction from "./TweetAction";
 
 const TweetActions = ({ replyTxt, retweetTxt, loveTxt}) => {
+   const handleLove = () => {
+
+   }
    return (
       <div className="tweet-actions">
          <TweetAction icon={reply} text={replyTxt} />
          <TweetAction icon={retweet} text={retweetTxt} />
-         <TweetAction icon={love} text={loveTxt} />
+         <TweetAction 
+            icon={love} 
+            text={loveTxt}
+            handleClick={handleLove} 
+         />
          <TweetAction icon={share} />
       </div>
    );

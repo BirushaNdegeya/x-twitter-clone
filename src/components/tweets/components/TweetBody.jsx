@@ -4,13 +4,20 @@ import TweetImage from "./TweetImage";
 import TweetActions from "./TweetActions";
 import TweetTitle from "./TweetTitle";
 
-const TweetBody = ({ replyText, retweetText, loveText, userTweetText, url, uName, uTwitter, lastHours  }) => {
+/**
+ * Tweet Body UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
+
+const TweetBody = ({ linkId, replyText, retweetText, loveText, userTweetText, url, uName, uTwitter, lastHours  }) => {
    return (
       <div className="tweet-body">
          <TweetTitle 
             userName={uName}
             userTwitter={uTwitter}
             connectedHours={lastHours}
+            linkId={linkId}
          />
          <TweetText 
             tweetText={userTweetText}

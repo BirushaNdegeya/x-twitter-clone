@@ -1,11 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const TweetAvatar = ({ userImage }) => {
+/**
+ * Tweet Avatar UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element} 
+ */
+
+const TweetAvatar = ({ userImage, linkId }) => {
    return (
-      <div to="/profile/info" className="tweet-avatar">
-         <img src={userImage} />
-      </div>
+      <Link 
+         to={`/profile/${linkId}`} 
+         className="tweet-avatar">
+            <img src={userImage} />
+      </Link>
    );
 };
 
