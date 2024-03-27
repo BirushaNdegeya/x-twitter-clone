@@ -17,9 +17,9 @@ const Sidebar = () => {
    }
    return (
       <div 
-         className="sidebar flex flex-jc-sb flex-fd-c">
+         className="hidden lg:flex lg:flex-col w-1/5 flex-grow-1 h-screen sticky top-0 border-r border-[#2F3336] justify-between p-4 pl-6">
          <div 
-            className="interaction flex flex-fd-c">
+            className="flex flex-col items-start">
                <Link to="/">
                   <SidebarAction 
                      icon={twitter} />

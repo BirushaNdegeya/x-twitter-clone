@@ -11,7 +11,7 @@ import TrendsWhoToFollow from "./trends/TrendsWhoToFollow";
 
 const Trends = () => {
    return (
-      <aside className="trends">
+      <aside className="hidden lg:flex lg:flex-col w-1/3 flex-grow-1 h-screen sticky top-0 border-l border-[#2F3336] justify-between p-4 pl-6">
          <div className="separator"></div>
          <TrendsInput />
          <TrendsForYou />

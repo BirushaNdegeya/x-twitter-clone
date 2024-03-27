@@ -10,7 +10,7 @@ import TopTweets from "./TopTweets";
 
 const Header = ({ title, imgURL}) => {
    return (
-      <header className="header">
+      <header className="flex items-center justify-between text-white p-4 border-b border-[#2F3336]">
          <PageTitle 
             title={title} />
          <TopTweets 

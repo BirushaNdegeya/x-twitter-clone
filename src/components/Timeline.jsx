@@ -14,7 +14,7 @@ import {
 const Timeline = () => {
    
    return (
-      <div className="timeline">
+      <div className="w-full flex flex-col flex-wrap max-w-[800px]">
          <Header 
             title='Home'
             imgURL={timelineProp}
