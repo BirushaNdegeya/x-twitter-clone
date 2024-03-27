@@ -20,14 +20,14 @@ const f = postData.map((item) => (
 
 const TrendsWhoToFollow = () => {
    return (
-      <div className="trend-box">
+      <div className="bg-[#202327] p-4 rounded-[16px] mb-4">
 
-         <TrendsTitle 
+         <TrendsTitle
             title="Who to follow"
          />
 
          {
-            f.map(el =>(
+            f.map(el => (
                <TrendsWhoToFollowBody
                   key={el.id}
                   imgURL={el.logo}
@@ -37,9 +37,8 @@ const TrendsWhoToFollow = () => {
             ))
          }
 
-         <Button 
+         <Button
             title="Show More"
-            outline="outline"
          />
 
       </div>

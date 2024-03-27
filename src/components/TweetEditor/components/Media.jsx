@@ -1,10 +1,16 @@
 import React from "react";
 
+/**
+ * Media UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
+
 const Media = ({ imgURL }) => {
    return (
-      <i>
-         <img src={imgURL}  />
-      </i>
+      <img
+         src={imgURL}
+      />
    );
 };
 

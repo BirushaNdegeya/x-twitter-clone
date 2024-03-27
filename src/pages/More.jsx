@@ -9,7 +9,7 @@ import MoreFill from '../assets/icons/More.svg';
 
 const More = () => {
    return (
-      <main role="main" className="timeline">
+      <main role="main" className="w-full flex flex-col flex-wrap max-w-[800px]">
          <Header 
             title="More"
             imgURL={MoreFill}

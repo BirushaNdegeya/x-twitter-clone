@@ -11,7 +11,7 @@ import { Settings } from '../../data/ImagesIcons';
 
 export const TrendsForYou = () => {
    return (
-      <div className="trend-box">
+      <div className="flex flex-col gap-4 bg-[#202327] p-4 rounded-[16px] mb-4">
 
          <TrendsTitle
             title="Trends for you"
@@ -23,8 +23,7 @@ export const TrendsForYou = () => {
          <TrendsForYouBody />
          <TrendsForYouBody />
 
-         <Button 
-            outline="outline"
+         <Button
             title="Show More"
          />
 

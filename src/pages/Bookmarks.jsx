@@ -9,7 +9,7 @@ import Header from "../components/header/Header";
 
 const Bookmarks = () => {
    return (
-      <main role="main" className="timeline">
+      <main role="main" className="w-full flex flex-col flex-wrap max-w-[800px]">
          <Header 
             title="Bookmarks"
             imgURL={BookmarksFill}

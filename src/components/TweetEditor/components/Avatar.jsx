@@ -1,10 +1,17 @@
 import React from "react";
 
+/**
+ * Avatar UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
+
 const Avatar = ({ imgURL }) => {
    return (
-      <div className="avatar">
-         <img src={imgURL} alt="Profile Photo" />
-      </div>
+      <img 
+         src={imgURL} 
+         alt="Profile Photo" 
+      />
    );
 };
 

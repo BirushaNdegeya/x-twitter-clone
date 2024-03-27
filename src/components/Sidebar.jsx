@@ -16,7 +16,7 @@ const Sidebar = () => {
       background: '#202327'
    }
    return (
-      <div 
+      <aside 
          className="hidden lg:flex lg:flex-col w-1/5 flex-grow-1 h-screen sticky top-0 border-r border-[#2F3336] justify-between p-4 pl-6">
          <div 
             className="flex flex-col items-start">
@@ -91,7 +91,7 @@ const Sidebar = () => {
             profURl={ProfilePhoto}
             morURL={More2}
          />
-      </div>
+      </aside>
    );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { verified } from '../../../data/ImagesIcons';
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 /**
  * Tweet Title UI Component
@@ -8,25 +8,21 @@ import { Link } from "react-router-dom";
  * @returns {React.JSX.Element}
  */
 
-const TweetTitle = ({ linkId, userName, userTwitter, connectedHours}) => {
-   const tweetTitleStyle = {
-      textDecoration: 'none', 
-      color: '#fff'
-   };
+const TweetTitle = ({ linkId, userName, userTwitter, connectedHours }) => {
+   const navigate = useNavigate();
+   const navigateProfilePost = () => {
+      navigate(`/profile/${linkId}`);
+   }
    return (
-      <Link 
-         to={`/profile/${linkId}`} 
-         className="tweet-title" 
-         style={tweetTitleStyle}>
-         <div>
-            <div className="my-flex">
-               <p className="tweet-title-author">{userName}</p>
-               <i><img src={verified} /></i>
-               <p className="tweet-title-details">{userTwitter}</p>
-               <p className="tweet-title-details">{connectedHours}</p>
-            </div>
-         </div>
-      </Link>
+      <div
+         onClick={navigateProfilePost}
+         className="flex items-center gap-3 mb-2 cursor-pointer"
+      >
+         <p>{userName}</p>
+         <img src={verified} />
+         <p>{userTwitter}</p>
+         <p>{connectedHours}</p>
+      </div>
    );
 };
 

@@ -12,7 +12,7 @@ import TweetTitle from "./TweetTitle";
 
 const TweetBody = ({ linkId, replyText, retweetText, loveText, userTweetText, url, uName, uTwitter, lastHours  }) => {
    return (
-      <div className="tweet-body">
+      <>
          <TweetTitle 
             userName={uName}
             userTwitter={uTwitter}
@@ -30,7 +30,7 @@ const TweetBody = ({ linkId, replyText, retweetText, loveText, userTweetText, ur
             retweetTxt={retweetText}
             loveTxt={loveText}
          />
-      </div>
+      </>
    );
 };
 

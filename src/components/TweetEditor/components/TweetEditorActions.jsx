@@ -8,18 +8,21 @@ import {
    poll
 } from '../../../data/ImagesIcons';
 
+/**
+ * Publish Buttons UI Component
+ * @returns {React.JSX.Element}
+ */
+
 const PublishButtons = () => {
-   const arr = [media, gif, emoji, poll, schedule];
+   const medias = [media, gif, emoji, poll, schedule];
    return (
-      <div className="tweet-editor-buttons">
-         <div className="tweet-editor-actions">
-            {
-               arr.map(((med, i) => (
-                  <Media key={i} imgURL={med} />
-               )))
-            }
-         </div>
-      </div> 
+      <div className="flex gap-6 hover:cursor-pointer">
+         {
+            medias.map(((media, i) => (
+               <Media key={i} imgURL={media} />
+            )))
+         }
+      </div>
    );
 };
 

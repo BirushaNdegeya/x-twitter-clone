@@ -8,8 +8,9 @@ import React from "react";
 
 const TweetAction = ({ text, svgBox }) => {
    return (
-      <div 
-         className="tweet-action">
+      <div
+         className="flex items-center gap-8 cursor-pointer"
+      >
          <div>{svgBox}</div>
          <p>{text}</p>
       </div>

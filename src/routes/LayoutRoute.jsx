@@ -10,7 +10,7 @@ import { Outlet } from "react-router-dom";
 
 const LayoutRoute = () => {
    return (
-      <main role="main" className="w-full flex">
+      <main role="main" className="w-full flex bg-black text-white">
          <Sidebar />
          <Outlet />
          <Trends />

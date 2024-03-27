@@ -10,12 +10,12 @@ import TweetContent from './components/TweetContent';
 
 const Tweet = ({ linkId, userPhoto, nameTwitter, datePost, name, reply, retweet, love, desc, URL }) => {
    return (
-      <div className='tweet'>
-         <TweetAvatar 
+      <div className='flex gap-6 p-4 items-start border-b border-[#202327]'>
+         <TweetAvatar
             userImage={userPhoto}
             linkId={linkId}
          />
-         <TweetContent 
+         <TweetContent
             linkId={linkId}
             tweetSrc={URL}
             userMessage={desc}
