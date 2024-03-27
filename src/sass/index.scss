@@ -9,10 +9,9 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Inter", serif;
+   font-family: "Inter", sans-serif;
    user-select: none;
 }
-
 
 body{
    background-color: $BLACK;
@@ -110,22 +109,6 @@ body{
    border: none;
 }
 
-/* custom style */
-.tweet-editor-actions svg {
-   color: #1D9BF0;
-   cursor: pointer;
-   width: 24px;
-   height: 24px;
-}
-
-svg {
-   fill: #1D9BF0;
-}
-.tweet-editor-actions svg:hover {
-   color: #fff;
-}
-/* custom style */
-
 .tweet{
    display: flex;
    justify-content: flex-start;
@@ -136,8 +119,6 @@ svg {
 }
 
 .tweet-avatar {
-   /*height: 70px;*/
-   /*width: 70px;*/
    flex: 0 0 70px;
 }
 
@@ -223,9 +204,13 @@ svg {
 }
 
 .tweet-actions svg {
-   width: 1rem;
+   width: 1.5rem;
    height: auto;
-   color: #2F3336;
+   color: red;
+   fill: red;
+   &:hover {
+      fill: navy;
+   }
 }
 
 .tweet-action{
@@ -241,4 +226,8 @@ svg {
 
 .wrapper {
    width: 100%;
+}
+
+.none {
+   text-decoration: none;
 }
