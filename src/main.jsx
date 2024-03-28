@@ -9,14 +9,13 @@ import Lists from "./pages/Lists";
 import Messages from "./pages/Messages";
 import More from "./pages/More";
 import Notifications from "./pages/Notifications";
-import Profile from "./pages/Profile";
-import ProfilePost from "./pages/ProfilePost";
+import Profile from "./pages/profile/Profile";
+import ProfilePost from "./pages/profile/ProfilePost";
 import { 
    RouterProvider,
    createBrowserRouter,
 } from 'react-router-dom';
 import './css/index.css';
-// import './css/main.css';
 
 const router = createBrowserRouter([
    {

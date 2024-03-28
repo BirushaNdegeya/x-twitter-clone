@@ -10,7 +10,7 @@ import { Outlet } from "react-router-dom";
 
 const LayoutRoute = () => {
    return (
-      <main role="main" className="flex container mx-auto">
+      <main role="main" className='flex justify-center'>
          <Sidebar />
          <Outlet />
          <Trends />

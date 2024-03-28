@@ -10,11 +10,13 @@ import Header from "../components/header/Header";
 const Explore = () => {
    return (
       <main role="main" className="main-container">
-         <Header 
+         <Header
             title="Explore"
             imgURL={ExploreFill}
          />
-         <h1>Explore Screen</h1>
+         <div className="p-4">
+            <h1>Explore Screen</h1>
+         </div>
       </main>
    );
 };

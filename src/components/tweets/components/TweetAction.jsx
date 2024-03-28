@@ -11,7 +11,9 @@ const TweetAction = ({ text, svgBox }) => {
       <div
          className="flex items-center gap-8 cursor-pointer"
       >
-         <div>{svgBox}</div>
+         <div
+            className="hover:bg-[navy]"
+         >{svgBox}</div>
          <p>{text}</p>
       </div>
    );

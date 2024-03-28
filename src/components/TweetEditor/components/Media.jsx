@@ -9,6 +9,7 @@ import React from "react";
 const Media = ({ imgURL }) => {
    return (
       <img
+         className="hover:cursor-pointer"
          src={imgURL}
       />
    );

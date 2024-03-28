@@ -14,7 +14,7 @@ import {
 const Timeline = () => {
    
    return (
-      <div className="main-container">
+      <div className="main-container border-x border-[#202327]">
          <Header 
             title='Home'
             imgURL={timelineProp}
