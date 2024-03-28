@@ -11,7 +11,7 @@ const Share = () => {
       setColor('#D9D9D9');
    }
    const handleMouseOver = () => {
-      setColor('#1d9bf0');
+      setColor('navy');
    }
    return (
       <svg 
