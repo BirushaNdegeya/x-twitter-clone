@@ -6,13 +6,11 @@ import React from "react";
  * @returns {React.JSX.Element}
  */
 
-const TweetAction = ( { icon, text, handleClick }) => {
+const TweetAction = ({ text, svgBox }) => {
    return (
       <div 
-         onClick={handleClick}
-         className="tweet-action" 
-         style={{ cursor: 'pointer' }}>
-         <i><img src={icon} /></i>
+         className="tweet-action">
+         <div>{svgBox}</div>
          <p>{text}</p>
       </div>
    );
