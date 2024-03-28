@@ -15,14 +15,13 @@ import { Link, NavLink } from "react-router-dom";
 const Sidebar = () => {
    const navLinkStyle = {
       background: '#202327',
-      borderRadius: '8px',
    }
    return (
       <aside
-         className="hidden lg:flex lg:flex-col grow h-screen sticky top-0 border-r border-[#2F3336] justify-between p-4 pl-6 max-w-[325px]"
+         className="hidden lg:flex lg:flex-col grow h-screen sticky top-0 border-r border-[#2F3336] justify-between max-w-[325px] p-4 pr-8"
       >
          <div
-            className="flex flex-col items-start"
+            className="flex flex-col items-start gap-6"
          >
             <Link
                to="/"
@@ -31,6 +30,7 @@ const Sidebar = () => {
                   icon={twitter}
                />
             </Link>
+
             <NavLink
                to="/"
                end
@@ -43,7 +43,8 @@ const Sidebar = () => {
             </NavLink>
             <NavLink
                to="/explore"
-               style={({ isActive }) => isActive ? navLinkStyle : null}>
+               // style={({ isActive }) => isActive ? navLinkStyle : null}
+               className={({ isActive}) => isActive ? 'bg-[#202327] m-41 px-4 py-4 mb-4 ' : 'hover:bg-[#202327]'}>
                <SidebarAction
                   icon={Explore}
                   title="Explore" />
@@ -93,6 +94,7 @@ const Sidebar = () => {
             </NavLink>
             <Button
                title="Tweet"
+               classes="btn btn-primary full"
             />
          </div>
          <SidebarProfile

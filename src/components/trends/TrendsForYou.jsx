@@ -25,6 +25,7 @@ export const TrendsForYou = () => {
 
          <Button
             title="Show More"
+            classes="btn-outline"
          />
 
       </div>

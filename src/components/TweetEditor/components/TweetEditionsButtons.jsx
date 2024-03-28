@@ -15,6 +15,7 @@ const TweetEditorButtons = () => {
          <TweetEditorActions />
          <Button
             title={"Tweet"}
+            classes="btn btn-primary"
          />
       </div>
    );

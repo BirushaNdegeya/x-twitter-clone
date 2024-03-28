@@ -18,6 +18,28 @@
    }
 
    .main-container {
-      @apply flex flex-col flex-wrap max-w-[558px] md:w-full;
-   } 
+      @apply w-full flex flex-col flex-wrap md:max-w-[558px];
+   }
+   
+   /* primary btn */
+
+   .btn {
+      @apply h-10 pl-6 pr-6 rounded-full ;
+   }
+
+   .btn-primary {
+      @apply bg-[#1D9BF0] hover:bg-sky-600;
+   }
+
+   .btn-follow {
+      @apply bg-[#fff] hover:bg-slate-300;
+   }
+
+   .btn-outline {
+      @apply p-0 m-0 rounded-none bg-transparent text-yellow-200 hover:decoration-black decoration-red-100;
+   }
+
+   .full {
+      @apply w-full;
+   }
 }
