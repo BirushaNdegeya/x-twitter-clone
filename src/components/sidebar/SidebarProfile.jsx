@@ -7,17 +7,21 @@ import React from "react";
  */
 
 const SidebarProfile = ({ profURl, privURL, morURL }) => {
-
-   const imageStyle = {
-      height: '18px',
-      width: '18px'
-   }
    return (
-      <div className="sidebar-profile flex flex-ai-c">
-         <img src={profURl} />
-         <div>
+      <div
+         className="flex items-center gap-1 hover:bg-[#202327] justify-between px-6 py-2 rounded-full hover:cursor-pointer"
+      >
+         <img
+            src={profURl}
+         />
+         <div className="flex flex-col">
             <div
-            className="flex">Bradley Ortiz<img src={privURL} style={imageStyle}/></div>
+               className="flex items-center">
+               <p>Bradley Ortiz</p>
+               <img
+                  src={privURL}
+               />
+            </div>
             <div>@Bradley ...</div>
          </div>
          <img src={morURL} />

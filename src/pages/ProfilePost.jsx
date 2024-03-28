@@ -13,7 +13,7 @@ const ProfilePost = () => {
    const {id} = useParams();
    const profilePost = postData.filter(post => post.id == id);
    return (
-      <main className="timeline">
+      <main className="main-container">
          <Header 
             title="Profile"
             imgURL={ProfileFill}

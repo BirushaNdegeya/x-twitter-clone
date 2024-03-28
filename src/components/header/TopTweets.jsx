@@ -1,10 +1,16 @@
 import React from "react";
 
-const TopTweets = ( { imgURL }) => {
+/**
+ * Top Tweets UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
+
+const TopTweets = ({ imgURL }) => {
    return (
-      <i className="top-tweets">
-         <img src={imgURL} />
-      </i>
+      <img src={imgURL}
+         className="h-auto w-6"
+      />
    );
 };
 

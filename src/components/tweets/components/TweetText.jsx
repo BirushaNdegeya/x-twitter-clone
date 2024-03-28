@@ -1,10 +1,14 @@
 import React from "react";
 
+/**
+ * Tweet Text UI Component
+ * @param {object} props
+ * @returns {React.JSX.Element}
+ */
+
 const TweetText = ({ tweetText }) => {
    return (
-      <div className="tweet-tweet">
-         <p>{tweetText}</p>
-      </div>
+      <p className="mb-2">{tweetText}</p>
    );
 };
 

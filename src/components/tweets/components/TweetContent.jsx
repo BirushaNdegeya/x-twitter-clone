@@ -9,7 +9,7 @@ import TweetBody from "./TweetBody";
 
 const TweetContent = ({ linkId, userReply, userRetweet, userLove, userMessage, tweetSrc, myUserName, myUserTwitterName, agoHour}) => {
    return (
-      <div className="tweet-content">
+      <div>
          <TweetBody 
             linkId={linkId}
             uName={myUserName}

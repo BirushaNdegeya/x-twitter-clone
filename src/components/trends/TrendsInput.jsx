@@ -8,10 +8,16 @@ import { SearchIcon } from '../../data/ImagesIcons';
 
 const TrendsInput = () => {
    return (
-      <div className="trend-input">
-         <img src={SearchIcon} alt="" />
+      <div
+         className="flex items-center bg-[#202327] rounded-2xl sticky gap-4 top-0 mb-4"
+      >
+         <img
+            src={SearchIcon}
+            alt="search icon"
+            className="hover:cursor-pointer"
+         />
          <input
-            className="input"
+            className="bg-transparent outline-none"
             type="text"
             placeholder="Search Tweet"
          />

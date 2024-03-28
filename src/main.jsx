@@ -16,6 +16,7 @@ import {
    createBrowserRouter,
 } from 'react-router-dom';
 import './css/index.css';
+// import './css/main.css';
 
 const router = createBrowserRouter([
    {

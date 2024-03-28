@@ -8,15 +8,17 @@ import { More2 } from '../../data/ImagesIcons';
 
 const TrendsForYouBody = () => {
    return (
-      <div className="trends-body">
+      <div
+         className="flex items-center justify-between"
+      >
          <div>
             <p>Trending in Turkey</p>
-            <h4>#SQUID</h4>
+            <h4 className="font-medium text-xl">#SQUID</h4>
             <p>2,066 Tweets</p>
          </div>
-         <i>
-            <img src={More2} alt="more" />
-         </i>
+         <img
+            src={More2} alt="more"
+         />
       </div>
    );
 };

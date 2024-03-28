@@ -6,11 +6,13 @@ import React from 'react';
  * @returns {React.JSX.Element}
  */
 
-const Button = ({ title, primary, outline }) =>{
+const Button = ({ title, classes }) =>{
    return (
       <button 
-         className={`btn btn-${primary} btn-${outline}`}>
-            {title}
+         className={`${classes}`}>
+            <span className='text-lg font-semibold'>
+               {title}
+            </span>
       </button>
    );
 };

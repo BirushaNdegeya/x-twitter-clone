@@ -9,7 +9,7 @@ import Header from "../components/header/Header";
 
 const Explore = () => {
    return (
-      <main role="main" className="timeline">
+      <main role="main" className="main-container">
          <Header 
             title="Explore"
             imgURL={ExploreFill}

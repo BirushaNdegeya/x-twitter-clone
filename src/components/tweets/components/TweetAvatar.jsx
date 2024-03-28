@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 /**
  * Tweet Avatar UI Component
@@ -8,12 +8,16 @@ import { Link } from "react-router-dom";
  */
 
 const TweetAvatar = ({ userImage, linkId }) => {
+   const navigate = useNavigate();
+   const navigateProfilePost = () => {
+      navigate(`/profile/${linkId}`);
+   }
    return (
-      <Link 
-         to={`/profile/${linkId}`} 
-         className="tweet-avatar">
-            <img src={userImage} />
-      </Link>
+      <img
+         onClick={navigateProfilePost}
+         src={userImage}
+         className='hover:cursor-pointer'
+      />
    );
 };
 
