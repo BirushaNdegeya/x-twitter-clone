@@ -13,7 +13,7 @@ const ProfilePost = () => {
    const {id} = useParams();
    const profilePost = postData.filter(post => post.id == id);
    return (
-      <main className="w-full flex flex-col flex-wrap max-w-[800px]">
+      <main className="main-container">
          <Header 
             title="Profile"
             imgURL={ProfileFill}

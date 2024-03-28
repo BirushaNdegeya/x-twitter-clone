@@ -9,7 +9,7 @@ import Header from "../components/header/Header";
 
 const Explore = () => {
    return (
-      <main role="main" className="w-full flex flex-col flex-wrap max-w-[800px]">
+      <main role="main" className="main-container">
          <Header 
             title="Explore"
             imgURL={ExploreFill}

@@ -8,7 +8,7 @@ import Timeline from "../components/Timeline";
 
 const Home = () => {
    return (
-      <Timeline />
+         <Timeline />
    );
 };
 

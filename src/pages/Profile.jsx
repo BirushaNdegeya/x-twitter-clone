@@ -9,7 +9,7 @@ import ProfileFill from '../assets/icons/Profile-Fill.svg';
 
 const Profile = () => {
    return (
-      <main role="main" className="w-full flex flex-col flex-wrap max-w-[800px]">
+      <main role="main" className="main-container">
          <Header 
             title="Profile"
             imgURL={ProfileFill}

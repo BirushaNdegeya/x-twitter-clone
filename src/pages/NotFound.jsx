@@ -11,7 +11,7 @@ const NotFound = () => {
       <main 
          role="main"
          style={{ height: '100vh', position: 'sticky', top: '0px'}}
-         className="w-full flex flex-col flex-wrap max-w-[800px]">
+         className="main-container">
             <FaRegFaceSurprise
                style={{
                   width: '250px',

@@ -9,7 +9,7 @@ import ListsFill from '../assets/icons/Lists-Fill.svg';
 
 const Lists = () => {
    return (
-      <main role="main" className="w-full flex flex-col flex-wrap max-w-[800px]">
+      <main role="main" className="main-container">
          <Header 
             title='Lists'
             imgURL={ListsFill}

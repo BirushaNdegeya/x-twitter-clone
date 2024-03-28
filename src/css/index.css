@@ -3,12 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
-*::after,
-*::before {
-   font-family: "Inter", sans-serif;
-}
 
 @layer components {
-   
+   /* reset */
+
+   *,
+   *::after,
+   *::before {
+      font-family: "Inter", sans-serif;
+   }
+   html {
+      background: #000;
+      color: #fff;
+   }
+
+   .main-container {
+      @apply flex flex-col flex-wrap max-w-[558px] md:w-full;
+   } 
 }
