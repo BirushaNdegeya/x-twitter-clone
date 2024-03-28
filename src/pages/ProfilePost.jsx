@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../components/header/Header";
 import ProfileFill from '../assets/icons/Profile-Fill.svg';
 import { useParams } from "react-router-dom";
