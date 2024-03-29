@@ -10,11 +10,13 @@ import MessagesFill from '../assets/icons/Messages-Fill.svg';
 const Messages = () => {
    return (
       <main role="main" className="main-container">
-         <Header 
+         <Header
             title="Messages"
             imgURL={MessagesFill}
          />
-         <h1>Mesages Screen</h1>
+         <div className="p-4">
+            <h1>Mesages Screen</h1>
+         </div>
       </main>
    );
 };

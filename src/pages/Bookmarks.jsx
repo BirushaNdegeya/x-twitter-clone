@@ -10,11 +10,13 @@ import Header from "../components/header/Header";
 const Bookmarks = () => {
    return (
       <main role="main" className="main-container">
-         <Header 
+         <Header
             title="Bookmarks"
             imgURL={BookmarksFill}
          />
-         <h1>Bookmarks Screen</h1>
+         <div className="p-4">
+            <h1>Bookmarks Screen</h1>
+         </div>
       </main>
    );
 };

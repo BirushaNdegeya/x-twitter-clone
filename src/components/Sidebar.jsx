@@ -18,13 +18,14 @@ const Sidebar = () => {
    }
    return (
       <aside
-         className="hidden lg:flex lg:flex-col grow h-screen sticky top-0 border-r border-[#2F3336] justify-between max-w-[325px] p-4 pr-8"
+         className="flex flex-col grow h-screen sticky top-0 border-r border-[#2F3336] justify-between max-w-[256px] py-4 pr-8"
       >
          <div
-            className="flex flex-col items-start gap-6"
+            className="flex flex-col items-start gap-4"
          >
             <Link
                to="/"
+               className="px-5"
             >
                <SidebarAction
                   icon={twitter}
@@ -34,6 +35,7 @@ const Sidebar = () => {
             <NavLink
                to="/"
                end
+               className=' px-5 py-2 rounded-full hover:bg-[#202327]'
                style={({ isActive }) => isActive ? navLinkStyle : null}
             >
                <SidebarAction
@@ -43,43 +45,54 @@ const Sidebar = () => {
             </NavLink>
             <NavLink
                to="/explore"
-               // style={({ isActive }) => isActive ? navLinkStyle : null}
-               className={({ isActive}) => isActive ? 'bg-[#202327] m-41 px-4 py-4 mb-4 ' : 'hover:bg-[#202327]'}>
+               className=' px-5 py-2 rounded-full hover:bg-[#202327]'
+               style={({ isActive }) => isActive ? navLinkStyle : null}
+               >
                <SidebarAction
                   icon={Explore}
                   title="Explore" />
             </NavLink>
             <NavLink
                to="/notifications"
-               style={({ isActive }) => isActive ? navLinkStyle : null}>
+               className=' px-5 py-2 rounded-full hover:bg-[#202327]'
+               style={({ isActive }) => isActive ? navLinkStyle : null}
+               >
                <SidebarAction
                   icon={Notifications}
                   title="Notifications" />
             </NavLink>
             <NavLink
                to="/messages"
-               style={({ isActive }) => isActive ? navLinkStyle : null}>
+               className=' px-5 py-2 rounded-full hover:bg-[#202327]'
+               style={({ isActive }) => isActive ? navLinkStyle : null}               
+               >
                <SidebarAction
                   icon={Messages}
                   title="Messages" />
             </NavLink>
             <NavLink
                to="/bookmarks"
-               style={({ isActive }) => isActive ? navLinkStyle : null}>
+               className=' px-5 py-2 rounded-full hover:bg-[#202327]'
+               style={({ isActive }) => isActive ? navLinkStyle : null}               
+               >
                <SidebarAction
                   icon={Bookmarks}
                   title="Bookmarks" />
             </NavLink>
             <NavLink
                to="/lists"
-               style={({ isActive }) => isActive ? navLinkStyle : null}>
+               className=' px-5 py-2 rounded-full hover:bg-[#202327]'
+               style={({ isActive }) => isActive ? navLinkStyle : null}               
+               >
                <SidebarAction
                   icon={Lists}
                   title="Lists" />
             </NavLink>
             <NavLink
                to="/profile"
-               style={({ isActive }) => isActive ? navLinkStyle : null}>
+               className=' px-5 py-2 rounded-full hover:bg-[#202327]'
+               style={({ isActive }) => isActive ? navLinkStyle : null}               
+               >
                <SidebarAction
                   icon={Profile}
                   title="Profile"
@@ -87,7 +100,9 @@ const Sidebar = () => {
             </NavLink>
             <NavLink
                to="more"
-               style={({ isActive }) => isActive ? navLinkStyle : null}>
+               className=' px-5 py-2 rounded-full hover:bg-[#202327]'
+               style={({ isActive }) => isActive ? navLinkStyle : null}               
+               >
                <SidebarAction
                   icon={More}
                   title="More" />

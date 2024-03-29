@@ -10,11 +10,13 @@ import NotificationsFill from '../assets/icons/Notifications-Fill.svg';
 const Notifications = () => {
    return (
       <main role="main" className="main-container">
-         <Header 
+         <Header
             title="Notifications"
             imgURL={NotificationsFill}
          />
-         <h1>Notifications Screen</h1>
+         <div className="p-4">
+            <h1>Notifications Screen</h1>
+         </div>
       </main>
    );
 };

@@ -10,11 +10,13 @@ import MoreFill from '../assets/icons/More.svg';
 const More = () => {
    return (
       <main role="main" className="main-container">
-         <Header 
+         <Header
             title="More"
             imgURL={MoreFill}
          />
-         <h1>More Screen</h1>
+         <div className="p-4">
+            <h1>More Screen</h1>
+         </div>
       </main>
    );
 };

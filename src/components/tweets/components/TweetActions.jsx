@@ -18,6 +18,7 @@ const TweetActions = ({ replyTxt, retweetTxt, loveTxt }) => {
    return (
       <div className="flex justify-between">
          <abbr title="Like"
+            className="hover:text-[#1d9bf0]"
             style={abbrStyle}
          >
             <TweetAction
