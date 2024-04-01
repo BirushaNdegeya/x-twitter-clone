@@ -6,18 +6,18 @@
 
 ### Links
 
--[] Solution URL: [Solution URL](https://github.com/BirushaNdegeya/x-twitter-clone)
--[] Live Site URL: [Live Site URL](https://x-twitter-myclone.vercel.app/)
+- ☑ Solution URL: [Solution URL](https://github.com/BirushaNdegeya/x-twitter-clone)
+- ☑ Live Site URL: [Live Site URL](https://x-twitter-myclone.vercel.app/)
 
 ## My process
 
 ### Built with
 
--[] Semantic HTML5 markup
--[] Mobile-first workflow
--[] [React-router-dom](https://reactrouter.com/en/main/start/tutorial) - Routing Library
--[] [React](https://reactjs.org/) - JS library
--[] [Tailwindcss]() - CSS Framework
+- ☑ Semantic HTML5 markup
+- ☑ Mobile-first workflow
+- ☑ [React-router-dom](https://reactrouter.com/en/main/start/tutorial) - Routing Library
+- ☑ [React](https://reactjs.org/) - JS library
+- ☑ [Tailwindcss]() - CSS Framework
 
 ### What I learned
 
@@ -70,13 +70,13 @@ I am transitioning towards building all of my websites using the React JavaScrip
 
 ### Useful resources
 
--[] [React](https://reactjs.org/) - JS library
+- ☑ [React](https://reactjs.org/) - JS library
 
 ## Author
 
--[] Frontend Mentor - [@BirushaNdegeya](https://www.frontendmentor.io/profile/BirushaNdegeya)
--[] Twitter - [@BirushaNdegeya](https://twitter.com/BNdegeya62741)
--[] LinkedIn - [BirushaNdegeya](https://www.linkedin.com/in/birusha-ndegeya-243b032a9)
+- ☑ Frontend Mentor - [@BirushaNdegeya](https://www.frontendmentor.io/profile/BirushaNdegeya)
+- ☑ Twitter - [@BirushaNdegeya](https://twitter.com/BNdegeya62741)
+- ☑ LinkedIn - [BirushaNdegeya](https://www.linkedin.com/in/birusha-ndegeya-243b032a9)
 
 ## Acknowledgments
 
