@@ -9,7 +9,7 @@ import { SearchIcon } from '../../data/ImagesIcons';
 const TrendsInput = () => {
    return (
       <div
-         className="flex items-center bg-[#202327] rounded-2xl sticky gap-4 top-0 mb-4"
+         className="flex items-center bg-[#202327] rounded-2xl sticky gap-4 top-4 mb-4"
       >
          <img
             src={SearchIcon}

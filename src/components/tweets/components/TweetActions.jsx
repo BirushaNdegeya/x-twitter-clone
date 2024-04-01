@@ -15,10 +15,12 @@ const TweetActions = ({ replyTxt, retweetTxt, loveTxt }) => {
    const abbrStyle = {
       textDecoration: 'none'
    }
+   const handleClick = () => console.log('clicked')
    return (
       <div className="flex justify-between">
          <abbr title="Like"
-            className="hover:text-[#1d9bf0]"
+            onClick={handleClick}
+            className="hover:text-blue-600"
             style={abbrStyle}
          >
             <TweetAction
@@ -31,6 +33,7 @@ const TweetActions = ({ replyTxt, retweetTxt, loveTxt }) => {
 
          <abbr
             title="Retweet"
+            className="hover:text-green-600"
             style={abbrStyle}
          >
             <TweetAction
@@ -43,6 +46,7 @@ const TweetActions = ({ replyTxt, retweetTxt, loveTxt }) => {
 
          <abbr
             title="React"
+            className="hover:text-red-600"
             style={abbrStyle}
          >
             <TweetAction

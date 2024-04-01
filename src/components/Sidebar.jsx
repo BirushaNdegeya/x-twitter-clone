@@ -18,10 +18,10 @@ const Sidebar = () => {
    }
    return (
       <aside
-         className="flex flex-col grow h-screen sticky top-0 border-r border-[#2F3336] justify-between max-w-[256px] py-4 pr-8"
+         className="flex flex-col h-screen w-[110px] sticky top-0 border-r border-[#2F3336] px-2 justify-center md:justify-between md:w-[256px] py-4 md:pr-8"
       >
          <div
-            className="flex flex-col items-start gap-4"
+            className="flex flex-col items-start gap-2"
          >
             <Link
                to="/"
@@ -109,7 +109,7 @@ const Sidebar = () => {
             </NavLink>
             <Button
                title="Tweet"
-               classes="btn btn-primary full"
+               classes="btn btn-primary full hidden md:block"
             />
          </div>
          <SidebarProfile

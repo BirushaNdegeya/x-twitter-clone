@@ -6,11 +6,12 @@ import React from 'react';
  * @returns {React.JSX.Element}
  */
 
-const Button = ({ title, classes }) =>{
+const Button = ({ title, classes, handleClick }) =>{
    return (
       <button 
-         className={`${classes}`}>
-            <span className='text-lg font-semibold'>
+         onClick={handleClick}
+         className={`${classes} hover:opacity-95`}>
+            <span className='text-md'>
                {title}
             </span>
       </button>

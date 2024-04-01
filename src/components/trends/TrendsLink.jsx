@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 const TrendsLink = () => {
    return (
       <footer className="flex flex-wrap gap-3 text-justify">
-         <Link to="/" className="hover:cursor-pointer decoration-1 decoration-white">Term of Service</Link>
-         <Link to="/" className="hover:cursor-pointer decoration-1 decoration-white">Privacy Policy</Link>
-         <Link to="/" className="hover:cursor-pointer decoration-1 decoration-white">imprint</Link>
-         <Link to="/" className="hover:cursor-pointer decoration-1 decoration-white">Ads info</Link>
-         <Link to="/more" className="hover:cursor-pointer decoration-1 decoration-white">More ...</Link>
+         <Link to="/" className="hover:cursor-pointer hover:underline">Term of Service</Link>
+         <Link to="/" className="hover:cursor-pointer hover:underline">Privacy Policy</Link>
+         <Link to="/" className="hover:cursor-pointer hover:underline">imprint</Link>
+         <Link to="/" className="hover:cursor-pointer hover:underline">Ads info</Link>
+         <Link to="/more" className="hover:cursor-pointer hover:underline">More ...</Link>
          <div>&copy; {new Date().getFullYear()} Tweeter, Inc.</div>
       </footer>
    );
