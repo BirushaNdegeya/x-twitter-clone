@@ -8,12 +8,13 @@ import TweetContent from './components/TweetContent';
  * @returns {React.JSX.Element}
  */
 
-const Tweet = ({ linkId, userPhoto, nameTwitter, datePost, name, reply, retweet, love, desc, URL }) => {
+const Tweet = ({ linkId, userPhoto, nameTwitter, datePost, name, reply, retweet, love, desc, URL, linkName }) => {
    return (
       <div className='flex gap-6 p-4 items-start border-b border-[#202327]'>
          <TweetAvatar
             userImage={userPhoto}
             linkId={linkId}
+            linkName={linkName}
          />
          <TweetContent
             linkId={linkId}

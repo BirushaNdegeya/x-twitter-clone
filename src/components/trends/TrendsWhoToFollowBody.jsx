@@ -10,30 +10,18 @@ import { verified } from "../../data/ImagesIcons";
 
 const TrendsWhoToFollowBody = ({ imgURL, tweetName, title }) => {
    return (
-      <div
-         className="flex items-center gap-2 text-sm mb-4 mt-4"
-      >
-
-         <img
-            src={imgURL}
-            alt="logo post"
-            className="h-6 w-6"
-         />
-
-
-         <div className="flex grow items-center justify-between">
-            <div className="flex items-center">
-               <p>{title}</p>
-               <img
-                  src={verified}
-                  alt="verified"
-               />
+      <div className="flex items-center text-[12px] mb-4 mt-4 justify-between">
+         <div className="flex items-center gap-3">
+            <img src={imgURL} />
+            <div>
+               <div className="flex items-center mb-2"><span>{title}</span><img src={verified} className="h-4 w-4" /></div>
+               <p>{tweetName}</p>
             </div>
-            <p>{tweetName}</p>
-            <Button
-               title="Follow"
-            />
          </div>
+         <Button
+            title="Follow"
+            classes="bg-[#fff] text-[#2F3336] rounded-full px-4 py-1 hover:bg-[#f9f9f9]"
+         />
       </div>
    );
 };

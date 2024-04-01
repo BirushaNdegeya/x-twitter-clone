@@ -24,6 +24,7 @@ const Tweets = () => {
                   desc={tweet.bodyText}
                   URL={tweet?.img}
                   linkId={tweet.id}
+                  linkName={tweet.name}
                />
             ))
          }

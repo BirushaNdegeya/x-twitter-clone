@@ -11,6 +11,12 @@ import More from "./pages/More";
 import Notifications from "./pages/Notifications";
 import Profile from "./pages/profile/Profile";
 import ProfilePost from "./pages/profile/ProfilePost";
+import Posts from "./pages/profile/screens/Posts";
+import Replies from './pages/profile/screens/Replies';
+import Media from './pages/profile/screens/Media';
+import Like from './pages/profile/screens/Like';
+import Highlights from './pages/profile/screens/Highlights';
+import Article from './pages/profile/screens/Articles';
 import { 
    RouterProvider,
    createBrowserRouter,
@@ -47,12 +53,38 @@ const router = createBrowserRouter([
             element: <More />
          },
          {
-            path: '/profile/:id',
-            element: <ProfilePost />
+            path: '/profile',
+            element: <Profile />,
+            children: [
+               {
+                  path: '/profile',
+                  element: <Posts />
+               },
+               {
+                  path: '/profile/replies',
+                  element: <Replies />
+               },
+               {
+                  path: '/profile/media',
+                  element: <Media />
+               },
+               {
+                  path: '/profile/like',
+                  element: <Like />
+               },
+               {
+                  path: '/profile/highlights',
+                  element: <Highlights />
+               },
+               {
+                  path: '/profile/article',
+                  element: <Article />
+               }
+            ]
          },
          {
-            path: '/profile',
-            element: <Profile />
+            path: '/profile/:id',
+            element: <ProfilePost />
          },
          {
             path: '/notifications',

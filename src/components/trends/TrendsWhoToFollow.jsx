@@ -2,7 +2,6 @@ import React from "react";
 import TrendsTitle from './TrendsTitle';
 import TrendsWhoToFollowBody from "./TrendsWhoToFollowBody";
 import { postData } from '../../data/PostData';
-import Button from "../buttons/Button";
 
 /**
  * Trends Who To Follow UI Component
@@ -24,6 +23,7 @@ const TrendsWhoToFollow = () => {
 
          <TrendsTitle
             title="Who to follow"
+            styles="px-0"
          />
 
          {
@@ -37,9 +37,9 @@ const TrendsWhoToFollow = () => {
             ))
          }
 
-         <Button
-            title="Show More"
-         />
+         <button
+            className="hover:underline text-[#1D9BF0] w-32 text-left hover:font-medium"
+         >Show More</button>
 
       </div>
    );

@@ -6,13 +6,11 @@ import React from "react";
  * @returns {React.JSX.Element}
  */
 
-const TrendsTitle = ({ title, imgURL }) => {
+const TrendsTitle = ({ title, imgURL, styles }) => {
    return (
-      <div className="flex justify-between items-center">
-         <h4 className="font-bold text-2xl">{title}</h4>
-         <i>
-            <img src={imgURL} alt="" />
-         </i>
+      <div className={`flex justify-between items-center pt-4 ${styles}`}>
+         <h4 className="font-bold text-xl">{title}</h4>
+         <img src={imgURL} alt="" />
       </div>
    );
 };

@@ -9,11 +9,8 @@ import React from "react";
 const TweetAction = ({ text, svgBox }) => {
    return (
       <div
-         className="flex items-center gap-8 cursor-pointer"
-      >
-         <div
-            className="hover:bg-[navy]"
-         >{svgBox}</div>
+         className="flex items-center gap-8 cursor-pointer">
+         <div>{svgBox}</div>
          <p>{text}</p>
       </div>
    );
