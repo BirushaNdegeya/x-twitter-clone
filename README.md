@@ -1,26 +1,23 @@
-# KADEA ACADEMY - X Twitter/Clone solution
+# KADEA ACADEMY | x-twitter-clone | SOLUTION
 
 ## Overview
 
-![](./public/assets/twitter-x-clone.png)
+![](./public/assets/x-clone-twitter.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/BirushaNdegeya/x-twitter-clone)
-- Live Site URL: [Live Site URL](https://x-twitter-myclone.vercel.app/)
+-[] Solution URL: [Solution URL](https://github.com/BirushaNdegeya/x-twitter-clone)
+-[] Live Site URL: [Live Site URL](https://x-twitter-myclone.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React-router-dom](https://reactrouter.com/en/main/start/tutorial) - Routing Library
-- [React](https://reactjs.org/) - JS library
-- [Styled Components](https://styled-components.com/) - For styles
+-[] Semantic HTML5 markup
+-[] Mobile-first workflow
+-[] [React-router-dom](https://reactrouter.com/en/main/start/tutorial) - Routing Library
+-[] [React](https://reactjs.org/) - JS library
+-[] [Tailwindcss]() - CSS Framework
 
 ### What I learned
 
@@ -34,19 +31,6 @@ By harnessing the flexibility of React components, I could efficiently integrate
 
 In essence, my experience with the X Twitter/clone React project underscored the significance of modular design, effective data management, and component reusability in React.js development. These principles have not only enriched my understanding of React but also equipped me with valuable tools to tackle complex web development challenges in future projects.
 
-```html
-
-   <head>
-      <meta charset="utf-8" />
-      <link rel="icon" type="image/svg+xml" href="./public/assets/Twitter.svg" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>x | twitter clone</title>
-   </head>
-   <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.jsx"></script>
-   </body>
-```
 ```js
 
 import React from "react";
@@ -86,13 +70,13 @@ I am transitioning towards building all of my websites using the React JavaScrip
 
 ### Useful resources
 
-- [React](https://reactjs.org/) - JS library
+-[] [React](https://reactjs.org/) - JS library
 
 ## Author
 
-- Frontend Mentor - [@BirushaNdegeya](https://www.frontendmentor.io/profile/BirushaNdegeya)
-- Twitter - [@BirushaNdegeya](https://twitter.com/BNdegeya62741)
-- LinkedIn - [BirushaNdegeya](https://www.linkedin.com/in/birusha-ndegeya-243b032a9)
+-[] Frontend Mentor - [@BirushaNdegeya](https://www.frontendmentor.io/profile/BirushaNdegeya)
+-[] Twitter - [@BirushaNdegeya](https://twitter.com/BNdegeya62741)
+-[] LinkedIn - [BirushaNdegeya](https://www.linkedin.com/in/birusha-ndegeya-243b032a9)
 
 ## Acknowledgments
 

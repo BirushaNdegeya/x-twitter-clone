@@ -1,6 +1,7 @@
 import React from "react";
 import TweetEditorInput from './components/TweetEditorInput';
 import TweetEditorButtons from "./components/TweetEditionsButtons";
+import { TweetEditorFormProvider } from "../../providers/TweetEditorFormProvider";
 
 /**
  * Tweet Editor Form UI Component
@@ -9,12 +10,14 @@ import TweetEditorButtons from "./components/TweetEditionsButtons";
 
 const TweetEditorForm = () => {
    return (
-      <div
-         className="flex flex-col flex-1"
-      >
-         <TweetEditorInput />
-         <TweetEditorButtons />
-      </div>
+      <TweetEditorFormProvider>
+         <div
+            className="flex flex-col flex-1"
+         >
+            <TweetEditorInput />
+            <TweetEditorButtons />
+         </div>
+      </TweetEditorFormProvider>
    );
 };
 

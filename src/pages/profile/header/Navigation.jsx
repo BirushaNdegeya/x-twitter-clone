@@ -11,7 +11,7 @@ const Navigation = () => {
          <NavLink 
             to='/profile'
             end
-            className={({isActive}) => isActive ? "border-b-2 border-[#1D9BF0]" : "" + 'hover:bg-[red]'}
+            className={({isActive}) => isActive ? "border-b-2 border-[#1D9BF0]" : ""}
             >Posts</NavLink>
          <NavLink 
             to="/profile/replies"

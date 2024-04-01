@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { TweetEditorFormContext } from '../../contexts/TweetEditorFormContext';
 
 /**
  * Button UI Component
@@ -6,10 +7,15 @@ import React from 'react';
  * @returns {React.JSX.Element}
  */
 
-const Button = ({ title, classes, handleClick }) =>{
+const Button = ({ title, classes }) =>{
+   const value = useContext(TweetEditorFormContext);
+   const submit = () => {
+      alert(value.inputValue);
+      value.setInputValue('');
+   };
    return (
-      <button 
-         onClick={handleClick}
+      <button
+         onClick={submit}
          className={`${classes} hover:opacity-95`}>
             <span className='text-md'>
                {title}
