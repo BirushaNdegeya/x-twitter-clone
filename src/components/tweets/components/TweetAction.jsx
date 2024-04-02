@@ -6,11 +6,11 @@ import React from "react";
  * @returns {React.JSX.Element}
  */
 
-const TweetAction = ({ text, svgBox }) => {
+const TweetAction = ({ text, children }) => {
    return (
       <div
-         className="flex items-center gap-8 cursor-pointer">
-         <div>{svgBox}</div>
+         className="flex items-center gap-4 cursor-pointer">
+         <>{children}</>
          <p>{text}</p>
       </div>
    );

@@ -9,7 +9,7 @@ import { More2 } from '../../data/ImagesIcons';
 const TrendsForYouBody = () => {
    return (
       <div
-         className="flex items-center justify-between hover:cursor-pointer hover:bg-[#3f444b] px-4"
+         className="flex items-center justify-between hover:cursor-pointer py-1 hover:bg-[#3f444b] px-4"
       >
          <div>
             <p>Trending in Turkey</p>

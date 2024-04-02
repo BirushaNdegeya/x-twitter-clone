@@ -17,13 +17,13 @@ const ProfileDetails = () => {
          </div>
          <div className="p-4">
             <h1 className="text-2xl font-bold">Bradley Ortiz</h1>
-            <p className='text-[#3f444b]'>@Bradley</p>
-            <p className='text-[#3f444b] my-2'>Joined October 2023</p>
+            <p className='text-[#9b9fa3]'>@Bradley</p>
+            <p className='text-[#9b9fa3] my-2'>Joined October 2023</p>
             <div className="flex gap-2 items-center">
                <FaCalendar 
-                  color="#3f444b"
+                  color="#9b9fa3"
                />
-               <span className="text-[#f9f9f9]">42</span><p className="hover:underline hover:cursor-pointer text-[#3f444b]">Following</p> <span className="text-[#f9f9f9]">100</span><p className="hover:underline hover:cursor-pointer text-[#3f444b]">Followers</p>
+               <span className="text-[#f9f9f9]">42</span><p className="hover:underline hover:cursor-pointer hover:text-[#d3d8dd] text-[#9b9fa3]">Following</p> <span className="text-[#f9f9f9]">100</span><p className="hover:underline hover:cursor-pointer hover:text-[#d3d8dd] text-[#9b9fa3]">Followers</p>
             </div>
          </div>
       </>
