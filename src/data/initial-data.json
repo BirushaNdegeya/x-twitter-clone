@@ -2,8 +2,26 @@
    "user": {
       "name": "Bradley Ortiz",
       "username": "bradley_",
-      "profile": "/Profile-Photo.jpg",
-      "tweets": []
+      "profile": "../assets/icons/Profile-Photo.svg",
+      "tweets": [
+         {
+            "title": {
+               "author": "Bradley Ortiz",
+               "details": {
+                  "nickname": "@bradley",
+                  "time": "7m"
+               }
+            },
+            "avatar": "../assets/icons/Profile-Photo.svg",
+            "text": "The beautiful lake from the eastern region of Democratic Republic of Congo are very exciting... for instance the Kivu lake.",
+            "image": null,
+            "data": {
+               "reply": 57,
+               "retweet": 144,
+               "react": 184
+            }
+         }
+      ]
    },
    "media": [
       {
@@ -14,7 +32,7 @@
                "time": "7m"
             }
          },
-         "avatar": "/image-1-2.png",
+         "avatar": "../assets/images/cnn.png",
          "text": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
          "image": null,
          "data": {
@@ -31,7 +49,7 @@
                "time": "2h"
             }
          },
-         "avatar": "/image-1.png",
+         "avatar": "../assets/images/times.png",
          "text": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
          "image": "/image-3.png",
          "data": {
@@ -48,7 +66,7 @@
                "time": "Oct 29"
             }
          },
-         "avatar": "/Profile-Photo-3.png",
+         "avatar": "../assets/images/twitter-logo.png",
          "text": "BIG NEWS lol jk still Twitter",
          "image": null,
          "data": {
@@ -65,7 +83,7 @@
                "time": "Oct 4"
             }
          },
-         "avatar": "/Profile-Photo-3.png",
+         "avatar": "../assets/images/twitter-logo.png",
          "text": "hello literally everyone",
          "image": null,
          "data": {
@@ -82,9 +100,9 @@
                "time": "Oct 4"
             }
          },
-         "avatar": "/Profile-Photo-3.png",
+         "avatar": "../assets/images/twitter-logo.png",
          "text": "hello literally everyone",
-         "image": "/image-3.png",
+         "image": "../assets/images/img-post.png",
          "data": {
             "reply": "118.7k",
             "retweet": "785.4k",
