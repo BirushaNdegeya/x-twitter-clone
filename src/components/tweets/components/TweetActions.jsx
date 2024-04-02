@@ -15,57 +15,31 @@ const TweetActions = ({ replyTxt, retweetTxt, loveTxt }) => {
    const abbrStyle = {
       textDecoration: 'none'
    }
-   const handleClick = () => console.log('clicked')
    return (
       <div className="flex justify-between">
-         <abbr title="Like"
-            onClick={handleClick}
-            className="hover:text-blue-600"
-            style={abbrStyle}
-         >
-            <TweetAction
-               svgBox={
-                  <Reply />
-               }
-               text={replyTxt}
-            />
+         <abbr title="Like" style={abbrStyle} className="hover:text-blue-500">
+            <TweetAction text={replyTxt}>
+               <Reply />
+            </TweetAction>
          </abbr>
 
-         <abbr
-            title="Retweet"
-            className="hover:text-green-600"
-            style={abbrStyle}
-         >
-            <TweetAction
-               svgBox={
-                  <Retweet />
-               }
-               text={retweetTxt}
-            />
+         <abbr title="Retweet" style={abbrStyle} className="hover:text-green-500">
+            <TweetAction text={retweetTxt}>
+               <Retweet />
+            </TweetAction>
          </abbr>
 
-         <abbr
-            title="React"
-            className="hover:text-red-600"
-            style={abbrStyle}
-         >
-            <TweetAction
-               svgBox={<ReactIcon />}
-               text={loveTxt}
-            />
+         <abbr title="React" style={abbrStyle} className="hover:text-red-500">
+            <TweetAction text={loveTxt}>
+               <ReactIcon />
+            </TweetAction>
          </abbr>
 
-         <abbr
-            title="Share"
-            style={abbrStyle}
-         >
-            <TweetAction
-               svgBox={
-                  <Share />
-               }
-            />
+         <abbr title="Share" style={abbrStyle}>
+            <TweetAction>
+               <Share />
+            </TweetAction>
          </abbr>
-
       </div>
    );
 };

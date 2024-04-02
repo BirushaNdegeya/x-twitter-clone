@@ -19,7 +19,7 @@ const f = postData.map((item) => (
 
 const TrendsWhoToFollow = () => {
    return (
-      <div className="bg-[#202327] p-4 rounded-[16px] mb-4">
+      <div className="bg-[#202327] p-4 rounded-[16px] mb-4 text-sm">
 
          <TrendsTitle
             title="Who to follow"

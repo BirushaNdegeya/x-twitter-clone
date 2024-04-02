@@ -6,12 +6,11 @@ import React from "react";
  * @returns {React.JSX.Element}
  */
 
-const Media = ({ imgURL }) => {
+const Media = ({ children }) => {
    return (
-      <img
-         className="hover:cursor-pointer"
-         src={imgURL}
-      />
+      <div className="p-2 hover:bg-[#202327] rounded-[50%]">
+         {children}
+      </div>
    );
 };
 

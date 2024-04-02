@@ -1,12 +1,10 @@
 import React from "react";
 import Media from "./Media";
-import {
-   gif,
-   emoji,
-   schedule,
-   media,
-   poll
-} from '../../../data/ImagesIcons';
+import MediaIcon from "../../../assets/customs/MediaIcon";
+import Emoji from "../../../assets/customs/Emoji";
+import Gif from "../../../assets/customs/Gif";
+import Schedule from "../../../assets/customs/Schedule";
+import Poll from "../../../assets/customs/Poll";
 
 /**
  * Publish Buttons UI Component
@@ -14,14 +12,10 @@ import {
  */
 
 const PublishButtons = () => {
-   const medias = [media, gif, emoji, poll, schedule];
+   const arr = [<MediaIcon/>, <Gif />, <Emoji />, <Schedule />, <Poll />];
    return (
-      <div className="flex gap-6 hover:cursor-pointer">
-         {
-            medias.map(((media, i) => (
-               <Media key={i} imgURL={media} />
-            )))
-         }
+      <div className="flex gap-4 hover:cursor-pointer">
+         {arr.map((m, i) => <Media key={i}>{m}</Media>)}
       </div>
    );
 };
