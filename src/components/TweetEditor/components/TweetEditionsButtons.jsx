@@ -7,7 +7,7 @@ import Button from "../../buttons/Button";
  * @returns {React.JSX.Element}
  */
 
-const TweetEditorButtons = () => {
+const TweetEditorButtons = ({handleClick}) => {
    return (
       <div
          className="flex justify-between items-center w-full"

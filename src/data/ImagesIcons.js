@@ -28,6 +28,10 @@ import Settings from '../assets/icons/Settings.svg';
 import More2 from '../assets/icons/More-2.svg';
 import Private from '../assets/icons/Private.svg';
 import ProfilePhoto from '../assets/icons/Profile-Photo.svg';
+import twitterPostsJSON from './initial-data.json';
+
+export const twitterCurrentUserInDB = [...twitterPostsJSON['current-user'].tweets];
+export const twitterPostInDB = [...twitterCurrentUserInDB, ...twitterPostsJSON.media];
 
 export {
    Private,

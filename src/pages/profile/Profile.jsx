@@ -14,7 +14,7 @@ const Profile = () => {
       <main role="main" className="main-container relative">
          <HeaderProfile
             profileName="Bradley Ortiz"
-            NumberOfPosts={8}
+            NumberOfPosts={2}
          />
          <ProfileDetails />
          <Navigation />

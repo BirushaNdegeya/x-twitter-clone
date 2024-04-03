@@ -1,8 +1,19 @@
 import React from "react";
+import { twitterCurrentUserInDB } from "../../../data/ImagesIcons";
+import Tweet from '../../../components/tweets/Tweet';
 
 const Posts = () => {
    return (
-      <h1>Posts Screen</h1>
+      <>
+         {
+            twitterCurrentUserInDB.map((tweet, i) => (
+               <Tweet 
+                  key={i.toString('2')}
+                  tweetsDB={tweet}
+               />
+            ))
+         }
+      </>
    );
 };
 

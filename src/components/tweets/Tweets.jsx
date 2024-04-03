@@ -1,6 +1,7 @@
-import React from "react";
+import { useContext} from "react";
+import { TweetPostContext } from '../../contexts/TweetPostContext';
 import Tweet from './Tweet';
-import { postData } from '../../data/PostData';
+import tweetsData from '../../data/initial-data.json';
 
 /**
  * Tweets UI Component
@@ -8,23 +9,15 @@ import { postData } from '../../data/PostData';
  */
 
 const Tweets = () => {
+   const { updatePost } = useContext(TweetPostContext);
+   const tweets = [...updatePost, ...tweetsData.media];
    return (
       <>
          {
-            postData.map((tweet) => (
+            tweets.map((tweet, i) => (
                <Tweet
-                  key={tweet.id}
-                  userPhoto={tweet.logo}
-                  name={tweet.name}
-                  nameTwitter={tweet.twitterName}
-                  datePost={tweet.lastedTime}
-                  reply={tweet?.likeText}
-                  retweet={tweet.commentText}
-                  love={tweet.loveText}
-                  desc={tweet.bodyText}
-                  URL={tweet?.img}
-                  linkId={tweet.id}
-                  linkName={tweet.name}
+                  key={i.toString('2')}
+                  tweetsDB={tweet}
                />
             ))
          }
