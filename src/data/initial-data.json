@@ -1,113 +1,88 @@
 {
-   "user": {
+   "current-user": {
       "name": "Bradley Ortiz",
-      "username": "bradley_",
-      "profile": "../assets/icons/Profile-Photo.svg",
+      "username": "@bradley",
+      "profile": "/assets/Profile-Photo.png",
       "tweets": [
          {
-            "title": {
-               "author": "Bradley Ortiz",
-               "details": {
-                  "nickname": "@bradley",
-                  "time": "7m"
-               }
-            },
-            "avatar": "../assets/icons/Profile-Photo.svg",
+            "author": "Bradley Ortiz",
+            "nickname": "@bradley",
+            "time": "7m",
+            "avatar": "/assets/Profile-Photo.png",
             "text": "The beautiful lake from the eastern region of Democratic Republic of Congo are very exciting... for instance the Kivu lake.",
-            "image": null,
-            "data": {
-               "reply": 57,
-               "retweet": 144,
-               "react": 184
-            }
+            "image": "https://source.unsplash.com/random/800x600",
+            "reply": 57,
+            "retweet": 144,
+            "react": 184
+         },
+         {
+            "author": "Bradley Ortiz",
+            "nickname": "@bradley",
+            "time": "7m",
+            "avatar": "/assets/Profile-Photo.png",
+            "text": "The beautiful lake from the eastern region of Democratic Republic of Congo are very exciting... for instance the Kivu lake.",
+            "image": "https://source.unsplash.com/random/800x600",
+            "reply": 57,
+            "retweet": 144,
+            "react": 184
          }
       ]
    },
    "media": [
       {
-         "title": {
-            "author": "CNN",
-            "details": {
-               "nickname": "CNN",
-               "time": "7m"
-            }
-         },
-         "avatar": "../assets/images/cnn.png",
+         "author": "CNN",
+         "nickname": "@CNN",
+         "time": "7m",
+         "avatar": "/assets/cnn.png",
          "text": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
          "image": null,
-         "data": {
-            "reply": 57,
-            "retweet": 144,
-            "react": 184
-         }
+         "reply": 57,
+         "retweet": 144,
+         "react": 184
       },
       {
-         "title": {
-            "author": "The New York Times",
-            "details": {
-               "nickname": "nytimes",
-               "time": "2h"
-            }
-         },
-         "avatar": "../assets/images/times.png",
+         "author": "The New York Times",
+         "nickname": "@nytimes",
+         "time": "2h",
+         "avatar": "/assets/times.png",
          "text": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
-         "image": "/image-3.png",
-         "data": {
-            "reply": 19,
-            "retweet": 48,
-            "react": 482
-         }
+         "image": "/assets/img-post.png",
+         "reply": 19,
+         "retweet": 48,
+         "react": 482
       },
       {
-         "title": {
-            "author": "Twitter",
-            "details": {
-               "nickname": "Twitter",
-               "time": "Oct 29"
-            }
-         },
-         "avatar": "../assets/images/twitter-logo.png",
+         "author": "Twitter",
+         "nickname": "@twitter",
+         "time": "Oct 29",
+         "avatar": "/assets/twitter-logo.png",
          "text": "BIG NEWS lol jk still Twitter",
          "image": null,
-         "data": {
-            "reply": "6.8k",
-            "retweet": "36.6k",
-            "react": "267.1k"
-         }
+         "reply": "6.8k",
+         "retweet": "36.6k",
+         "react": "267.1k"
       },
       {
-         "title": {
-            "author": "Twitter",
-            "details": {
-               "nickname": "Twitter",
-               "time": "Oct 4"
-            }
-         },
-         "avatar": "../assets/images/twitter-logo.png",
+         "author": "Twitter",
+         "nickname": "@twitter",
+         "time": "Oct 4",
+         "avatar": "/assets/twitter-logo.png",
          "text": "hello literally everyone",
-         "image": null,
-         "data": {
-            "reply": "118.7k",
-            "retweet": "785.4k",
-            "react": "3.3M"
-         }
+         "image": "https://source.unsplash.com/random/800x600",
+         "reply": "118.7k",
+         "retweet": "785.4k",
+         "react": "3.3M"
       },
       {
-         "title": {
-            "author": "Twitter",
-            "details": {
-               "nickname": "Twitter",
-               "time": "Oct 4"
-            }
-         },
-         "avatar": "../assets/images/twitter-logo.png",
+         "author": "Twitter",
+         "nickname": "Twitter",
+         "time": "Oct 4",
+         "avatar": "/assets/twitter-logo.png",
          "text": "hello literally everyone",
-         "image": "../assets/images/img-post.png",
-         "data": {
-            "reply": "118.7k",
-            "retweet": "785.4k",
-            "react": "3.3M"
-         }
+         "image": "/assets/img-post.png",
+         "reply": "118.7k",
+         "retweet": "785.4k",
+         "react": "3.3M"
       }
    ]
 }

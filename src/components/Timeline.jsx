@@ -5,6 +5,7 @@ import Tweets from "./tweets/Tweets";
 import {
    timelineProp,
 } from "../data/ImagesIcons";
+import { TweetPostProvider } from "../providers/TweetPostProvider";
 
 /**
  * Timeline UI Component
@@ -12,15 +13,16 @@ import {
  */
 
 const Timeline = () => {
-   
    return (
       <div className="main-container border-x border-[#202327]">
-         <Header 
+         <Header
             title='Home'
             imgURL={timelineProp}
          />
-         <TweetEditor />
-         <Tweets />
+         <TweetPostProvider>
+            <TweetEditor />
+            <Tweets />
+         </TweetPostProvider>
       </div>
    );
 };
