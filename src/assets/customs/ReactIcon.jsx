@@ -16,7 +16,6 @@ const ReactIcon = () => {
    };
    const handleClick = () => {
       setIsReact(!isReact);
-      console.log("I love tutka");
    };
    return (
       <div

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import TweetAvatar from './components/TweetAvatar';
 import TweetContent from './components/TweetContent';
-
+import { TweetPostProvider } from '../../providers/TweetPostProvider';
 /**
  * Tweet UI Component
  * @param {object} props

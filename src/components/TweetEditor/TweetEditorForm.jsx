@@ -1,3 +1,4 @@
+import { useForm } from "react-hook-form";
 import { useState, useContext } from "react";
 import { TweetPostContext } from "../../contexts/TweetPostContext";
 import TweetEditorInput from './components/TweetEditorInput';
@@ -9,6 +10,7 @@ import TweetEditorButtons from "./components/TweetEditionsButtons";
  */
 
 const TweetEditorForm = () => {
+   const { reset } = useForm();
    const { setUpdatePost } = useContext(TweetPostContext);
    const [postTweet, setPostTweet] = useState('');
    const handleChangeEvent = (ev) => {
@@ -17,6 +19,7 @@ const TweetEditorForm = () => {
    const submit = (ev) => {
       ev.preventDefault();
       setPostTweet("");
+      reset()
       setUpdatePost((prevState) => ([
          ...prevState, {
             "author": "Bradley Ortiz",

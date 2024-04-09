@@ -9,6 +9,7 @@ const TweetEditorInput = ({ postInputValue, handleChange }) => {
    return (
       <input
          type="text"
+         required={true}
          value={postInputValue}
          onChange={handleChange}
          placeholder="What's happening ?"

@@ -2,15 +2,11 @@ import { useState } from "react";
 import { TweetPostContext } from "../contexts/TweetPostContext";
 import { twitterCurrentUserInDB } from "../data/ImagesIcons";
 
-
-
-// export const twitterCurrentUserInDB = [...twitterPostsJSON['current-user'].tweets];
-// export const twitterPostInDB = [...twitterCurrentUserInDB, ...twitterPostsJSON.media];
-
 export const TweetPostProvider = ({children}) => {
    const [updatePost, setUpdatePost] = useState(twitterCurrentUserInDB);
+   const [reactText, setReactText] = useState(twitterCurrentUserInDB[0].reply);
    return (
-      <TweetPostContext.Provider value={{ updatePost, setUpdatePost }}>
+      <TweetPostContext.Provider value={{ updatePost, setUpdatePost, reactText, setReactText }}>
          {children}
       </TweetPostContext.Provider>
    );
