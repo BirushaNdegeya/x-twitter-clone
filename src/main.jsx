@@ -22,7 +22,12 @@ import {
    createBrowserRouter,
 } from 'react-router-dom';
 import './css/index.css';
+import { apiTweets } from "./api/api";
 
+const data = await apiTweets('http://localhost:3000/media');
+const db = await apiTweets('http://localhost:3000/current-user');
+console.log(data);
+console.log(db);
 
 const router = createBrowserRouter([
    {
