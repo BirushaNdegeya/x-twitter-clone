@@ -1,0 +1,151 @@
+[
+   {
+      "id": "003",
+      "author": "CNN",
+      "nickname": "@CNN",
+      "time": "7m",
+      "avatar": "/assets/cnn.png",
+      "text": "President Joe Biden touted a new agreement reached with the European Union to ease Trump-era tariffs on aluminum and steel as a 'major breakthrough' that would serve to both strengthen the US steel industry and combat the global climate crisis.",
+      "image": null,
+      "reply": 57,
+      "retweet": 144,
+      "react": 358
+   },
+   {
+      "id": "001",
+      "author": "Bradley Ortiz",
+      "nickname": "@bradley",
+      "time": "7m",
+      "avatar": "/assets/Profile-Photo.png",
+      "text": "The beautiful lake from the eastern region of Democratic Republic of Congo are very exciting... for instance the Kivu lake.",
+      "image": "https://source.unsplash.com/random/800x300",
+      "reply": 94,
+      "retweet": 354,
+      "react": 454
+   },
+   {
+      "id": "004",
+      "author": "The New York Times",
+      "nickname": "@nytimes",
+      "time": "2h",
+      "avatar": "/assets/times.png",
+      "text": "Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
+      "image": "/assets/img-post.png",
+      "reply": 19,
+      "retweet": 48,
+      "react": 482
+   },
+   {
+      "id": "004",
+      "author": "Twitter",
+      "nickname": "@twitter",
+      "time": "Oct 29",
+      "avatar": "/assets/twitter-logo.png",
+      "text": "BIG NEWS lol jk still Twitter, Learning hard is very useful and in my life I would like to be honest as possible",
+      "image": null,
+      "reply": 6,
+      "retweet": 36,
+      "react": 267
+   },
+   {
+      "id": "005",
+      "author": "Twitter",
+      "nickname": "@twitter",
+      "time": "Oct 4",
+      "avatar": "/assets/twitter-logo.png",
+      "text": "hello literally everyone, I would like to start learning React Js, React Native is very powerful",
+      "image": "https://picsum.photos/800/300/?random",
+      "reply": 118,
+      "retweet": 785,
+      "react": 3
+   },
+   {
+      "id": "002",
+      "author": "Bradley Ortiz",
+      "nickname": "@bradley",
+      "time": "7m",
+      "avatar": "/assets/Profile-Photo.png",
+      "text": "Leaving in the mountains in very good. We also known to be happy and to be more responsible but I love the simplicity in the life like having the bicycle after I would learn more deeply another programming language JavaScript and to see more advanced features in the programming language.",
+      "image": "https://picsum.photos/seed/picsum/800/300",
+      "reply": 547,
+      "retweet": 144,
+      "react": 194
+   },
+   {
+      "id": "006",
+      "author": "Twitter",
+      "nickname": "Twitter",
+      "time": "Oct 4",
+      "avatar": "/assets/twitter-logo.png",
+      "text": "hello literally everyone",
+      "image": "/assets/img-post.png",
+      "reply": 243,
+      "retweet": 984,
+      "react": 34
+   }
+]
+/** get data from mockapi */
+
+fetch('https://PROJECT_TOKEN.mockapi.io/tasks', {
+   method: 'GET',
+   headers: {'content-type':'application/json'},
+ }).then(res => {
+   if (res.ok) {
+       return res.json();
+   }
+   // handle error
+ }).then(tasks => {
+   // Do something with the list of tasks
+ }).catch(error => {
+   // handle error
+ })
+ 
+ // post data
+ 
+ const newTask = {
+    content: 'Check out mockapi.io',
+    completed: false,
+  };
+  
+  fetch('https://PROJECT_TOKEN.mockapi.io/tasks', {
+    method: 'POST',
+    headers: {'content-type':'application/json'},
+    // Send your data in the request body as JSON
+    body: JSON.stringify(newTask)
+  }).then(res => {
+    if (res.ok) {
+        return res.json();
+    }
+    // handle error
+  }).then(task => {
+    // do something with the new task
+  }).catch(error => {
+    // handle error
+  })
+ 
+ 
+  // Import Axios
+ const axios = require('axios');
+ 
+ // Example array of data
+ const dataArray = [
+   { id: 1, name: 'John' },
+   { id: 2, name: 'Jane' },
+   // Add more data objects as needed
+ ];
+ 
+ // Define the URL endpoint to send the data
+ const url = 'http://example.com/api/data';
+ 
+ // Make a POST request using Axios
+ axios.post(url, dataArray)
+   .then(response => {
+     // Handle success response
+     console.log('Data sent successfully:', response.data);
+   })
+   .catch(error => {
+     // Handle error
+     console.error('Error sending data:', error);
+   });
+ 
+ 
