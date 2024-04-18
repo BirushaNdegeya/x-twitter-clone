@@ -1,7 +1,6 @@
-import { useContext} from "react";
+import { useContext } from "react";
 import { TweetPostContext } from '../../contexts/TweetPostContext';
 import Tweet from './Tweet';
-import tweetsData from '../../data/initial-data.json';
 
 /**
  * Tweets UI Component
@@ -9,14 +8,18 @@ import tweetsData from '../../data/initial-data.json';
  */
 
 const Tweets = () => {
-   const { updatePost } = useContext(TweetPostContext);
-   const tweets = [...updatePost, ...tweetsData.media];
+   const { tweetsPostsInDB, isPending } = useContext(TweetPostContext);
+   if (isPending) {
+      return (
+         <h1 className="text-3xl text-center mt-4 text-blue-500" >Loading...</h1>
+      )
+   }
    return (
       <>
          {
-            tweets.map((tweet, i) => (
+            tweetsPostsInDB.map((tweet) => (
                <Tweet
-                  key={i.toString('2')}
+                  key={tweet.id}
                   tweetsDB={tweet}
                />
             ))

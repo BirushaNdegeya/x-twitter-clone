@@ -1,6 +1,13 @@
-{
-   "current-user": [
-      {
+import { createServer, Model } from "miragejs"
+
+
+createServer({
+   models: {
+      posts: Model,
+   },
+
+   seeds(server) {
+      server.create("posts", {
          "author": "Bradley Ortiz",
          "nickname": "@bradley",
          "time": "7m",
@@ -10,8 +17,8 @@
          "reply": 94,
          "retweet": 354,
          "react": 454
-      },
-      {
+      })
+      server.create("posts", {
          "author": "Bradley Ortiz",
          "nickname": "@bradley",
          "time": "7m",
@@ -21,10 +28,8 @@
          "reply": 547,
          "retweet": 144,
          "react": 194
-      }
-   ],
-   "media": [
-      {
+      })
+      server.create('posts', {
          "author": "CNN",
          "nickname": "@CNN",
          "time": "7m",
@@ -34,8 +39,8 @@
          "reply": 57,
          "retweet": 144,
          "react": 358
-      },
-      {
+      })
+      server.create('posts', {
          "author": "The New York Times",
          "nickname": "@nytimes",
          "time": "2h",
@@ -45,8 +50,8 @@
          "reply": 19,
          "retweet": 48,
          "react": 482
-      },
-      {
+      })
+      server.create('posts', {
          "author": "Twitter",
          "nickname": "@twitter",
          "time": "Oct 29",
@@ -56,8 +61,8 @@
          "reply": 6,
          "retweet": 36,
          "react": 267
-      },
-      {
+      })
+      server.create('posts', {
          "author": "Twitter",
          "nickname": "@twitter",
          "time": "Oct 4",
@@ -67,8 +72,8 @@
          "reply": 118,
          "retweet": 785,
          "react": 3
-      },
-      {
+      })
+      server.create('posts', {
          "author": "Twitter",
          "nickname": "Twitter",
          "time": "Oct 4",
@@ -78,6 +83,31 @@
          "reply": 243,
          "retweet": 984,
          "react": 34
-      }
-   ]
-}
+      })
+   },
+
+   routes() {
+      this.namespace = "api"
+      this.logging = false
+
+      this.get("/posts", (schema, request) => {
+         return schema.posts.all()
+      })
+
+      // this.get("/posts/:id", (schema, request) => {
+      //    const id = request.params.id
+      //    return schema.posts.find(id)
+      // })
+
+      // this.get("/host/posts", (schema, request) => {
+      //    // Hard-code the hostId for now
+      //    return schema.vans.where({ hostId: "123" })
+      // })
+
+      // this.get("/host/posts/:id", (schema, request) => {
+      //    // Hard-code the hostId for now
+      //    const id = request.params.id
+      //    return schema.vans.findBy({ id, hostId: "123" })
+      // })
+   }
+})

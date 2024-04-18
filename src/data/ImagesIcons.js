@@ -30,7 +30,7 @@ import Private from '../assets/icons/Private.svg';
 import ProfilePhoto from '../assets/icons/Profile-Photo.svg';
 import twitterPostsJSON from './initial-data.json';
 
-export const twitterCurrentUserInDB = [...twitterPostsJSON['current-user'].tweets];
+export const twitterCurrentUserInDB = [...twitterPostsJSON['current-user']];
 export const twitterPostInDB = [...twitterCurrentUserInDB, ...twitterPostsJSON.media];
 
 export {

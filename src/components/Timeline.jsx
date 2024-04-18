@@ -19,10 +19,8 @@ const Timeline = () => {
             title='Home'
             imgURL={timelineProp}
          />
-         <TweetPostProvider>
-            <TweetEditor />
-            <Tweets />
-         </TweetPostProvider>
+         <TweetEditor />
+         <Tweets />
       </div>
    );
 };

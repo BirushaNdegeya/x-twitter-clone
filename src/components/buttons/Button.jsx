@@ -9,6 +9,7 @@ import React from 'react';
 const Button = ({ title, classes}) => {
    return (
       <button
+         type="submit"
          className={`${classes} hover:opacity-95`}>
             <span className='text-md'>
                {title}

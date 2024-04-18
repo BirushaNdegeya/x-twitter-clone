@@ -17,17 +17,17 @@ import Media from './pages/profile/screens/Media';
 import Like from './pages/profile/screens/Like';
 import Highlights from './pages/profile/screens/Highlights';
 import Article from './pages/profile/screens/Articles';
-import { 
+import {
    RouterProvider,
    createBrowserRouter,
 } from 'react-router-dom';
 import './css/index.css';
-import { apiTweets } from "./api/api";
+import './server/server';
 
-const data = await apiTweets('http://localhost:3000/media');
-const db = await apiTweets('http://localhost:3000/current-user');
-console.log(data);
-console.log(db);
+fetch('/api/reminders')
+   .then(d => console.log(d))
+   .catch(err => console.log(err))
+
 
 const router = createBrowserRouter([
    {
