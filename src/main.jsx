@@ -22,12 +22,6 @@ import {
    createBrowserRouter,
 } from 'react-router-dom';
 import './css/index.css';
-import './server/server';
-
-fetch('/api/reminders')
-   .then(d => console.log(d))
-   .catch(err => console.log(err))
-
 
 const router = createBrowserRouter([
    {

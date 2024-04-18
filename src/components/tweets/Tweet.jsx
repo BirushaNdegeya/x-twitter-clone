@@ -1,4 +1,3 @@
-import React, { useEffect, useContext } from 'react';
 import TweetAvatar from './components/TweetAvatar';
 import TweetContent from './components/TweetContent';
 

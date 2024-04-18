@@ -1,6 +1,12 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { TweetPostContext } from "../contexts/TweetPostContext";
 import useFetch from "../hooks/useFetch";
+
+/**
+ * Tweet Post PROVIDER Definition
+ * @param {React.JSX.Element} param0 
+ * @returns {React.Context}
+ */
 
 export const TweetPostProvider = ({ children }) => {
    const [tweetsPostsInDB, setTweetsPostsInDB] = useState([]);

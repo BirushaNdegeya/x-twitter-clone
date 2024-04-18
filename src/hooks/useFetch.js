@@ -6,6 +6,7 @@ import axios from "axios";
  * @param {string} url 
  * @returns { data, isPending, error}
  */
+
 const useFetch = (url) => {
    const [data, setData] = useState([]);
    const [isPending, setIsPending] = useState(true);

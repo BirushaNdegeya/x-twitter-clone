@@ -1,11 +1,10 @@
-import React from "react";
 import Header from './header/Header';
 import TweetEditor from "./TweetEditor/TweetEditor";
 import Tweets from "./tweets/Tweets";
 import {
    timelineProp,
 } from "../data/ImagesIcons";
-import { TweetPostProvider } from "../providers/TweetPostProvider";
+
 
 /**
  * Timeline UI Component
