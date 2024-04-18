@@ -1,5 +1,4 @@
-import { useState, useContext } from "react";
-import { TweetPostContext } from "../../contexts/TweetPostContext";
+import { useForm } from 'react-hook-form';
 import TweetEditorInput from './components/TweetEditorInput';
 import TweetEditorButtons from "./components/TweetEditionsButtons";
 
@@ -9,37 +8,18 @@ import TweetEditorButtons from "./components/TweetEditionsButtons";
  */
 
 const TweetEditorForm = () => {
-   const { setUpdatePost } = useContext(TweetPostContext);
-   const [postTweet, setPostTweet] = useState('');
-   const handleChangeEvent = (ev) => {
-      setPostTweet(ev.target.value);
-   };
-   const submit = (ev) => {
-      ev.preventDefault();
-      setPostTweet("");
-      setUpdatePost((prevState) => ([
-         ...prevState, {
-            "author": "Bradley Ortiz",
-            "nickname": "@bradley",
-            "time": "1m",
-            "avatar": postTweet,
-            "image": null,
-            "reply": 0,
-            "retweet": 0,
-            "react": 0
-         },
-      ]).reverse())
+   const { register, handleSubmit, reset } = useForm();
+   const submit = (data) => {
+      console.log(data);
+      reset();
    }
    return (
       <form
-         onSubmit={submit}
+         onSubmit={handleSubmit(submit)}
          className="flex flex-col flex-1"
       >
-         <TweetEditorInput 
-            handleChange={handleChangeEvent}
-            value={postTweet}
-         />
-         <TweetEditorButtons/>
+         <TweetEditorInput register={register}/>
+         <TweetEditorButtons />
       </form>
 
    );

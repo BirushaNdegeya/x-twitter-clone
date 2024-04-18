@@ -11,7 +11,7 @@ import tweetsData from '../../data/initial-data.json';
 const TrendsWhoToFollow = () => {
    const n = 2;
    const bin = n.toString('2');
-   const arr = [...tweetsData["current-user"].tweets, ...tweetsData.media]
+   const arr = [...tweetsData["current-user"], ...tweetsData.media]
    const f = arr.map((tweet, index) => (
       {
          id: index.toString('2'),

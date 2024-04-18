@@ -1,7 +1,5 @@
 import React from "react";
 import HeaderProfile from "./header/HeaderProfile";
-import { useParams } from "react-router-dom";
-
 
 /**
  * Profile Post UI Component

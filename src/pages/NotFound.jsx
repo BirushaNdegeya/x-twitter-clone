@@ -10,8 +10,7 @@ const NotFound = () => {
    return (
       <main 
          role="main"
-         style={{ height: '100vh', position: 'sticky', top: '0px'}}
-         className="main-container">
+         className="main-container h-screen sticky top-0">
             <FaRegFaceSurprise
                style={{
                   width: '250px',
@@ -19,7 +18,6 @@ const NotFound = () => {
                   fill: '#fff'
                }}
             />
-            <h1>Something went wrong</h1>
       </main>
    );
 };

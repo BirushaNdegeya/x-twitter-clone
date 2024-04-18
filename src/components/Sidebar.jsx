@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./buttons/Button";
 import {
    twitter, HomeFill, Explore, Notifications, Messages, Bookmarks, Lists, Profile, More, Private, ProfilePhoto, More2

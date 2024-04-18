@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import TweetAvatar from './components/TweetAvatar';
 import TweetContent from './components/TweetContent';
 
@@ -7,7 +6,6 @@ import TweetContent from './components/TweetContent';
  * @param {object} props
  * @returns {React.JSX.Element}
  */
-
 
 const Tweet = ({tweetsDB}) => {   
    return (

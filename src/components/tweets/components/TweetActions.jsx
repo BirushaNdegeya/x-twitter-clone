@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import Reply from "../../../assets/customs/Reply";
 import ReactIcon from "../../../assets/customs/ReactIcon";
 import Retweet from "../../../assets/customs/Retweet";
@@ -15,6 +15,11 @@ const TweetActions = ({ replyTxt, retweetTxt, loveTxt }) => {
    const abbrStyle = {
       textDecoration: 'none'
    }
+   const [isShown, setIsShown] = useState(true);
+   const changeNumber = () => {
+      setIsShown(!isShown);
+   };
+
    return (
       <div className="flex justify-between">
          <abbr title="Like" style={abbrStyle} className="hover:text-blue-500">
@@ -30,7 +35,7 @@ const TweetActions = ({ replyTxt, retweetTxt, loveTxt }) => {
          </abbr>
 
          <abbr title="React" style={abbrStyle} className="hover:text-red-500">
-            <TweetAction text={loveTxt}>
+            <TweetAction handleClick={changeNumber} text={isShown ? loveTxt : loveTxt + 1}>
                <ReactIcon />
             </TweetAction>
          </abbr>

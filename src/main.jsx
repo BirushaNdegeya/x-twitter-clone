@@ -17,12 +17,11 @@ import Media from './pages/profile/screens/Media';
 import Like from './pages/profile/screens/Like';
 import Highlights from './pages/profile/screens/Highlights';
 import Article from './pages/profile/screens/Articles';
-import { 
+import {
    RouterProvider,
    createBrowserRouter,
 } from 'react-router-dom';
 import './css/index.css';
-
 
 const router = createBrowserRouter([
    {
