@@ -9,6 +9,8 @@ import useFetch from "../hooks/useFetch";
  */
 
 export const TweetPostProvider = ({ children }) => {
+   // const apiKey = process.env.REACT_APP_API_URL;
+   // console.log(apiKey);
    const [tweetsPostsInDB, setTweetsPostsInDB] = useState([]);
    const { data, isPending } = useFetch('https://662140383bf790e070b25816.mockapi.io/api/v1/posts');
    useEffect(() => {

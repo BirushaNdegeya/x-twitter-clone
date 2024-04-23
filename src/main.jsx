@@ -21,7 +21,10 @@ import {
    RouterProvider,
    createBrowserRouter,
 } from 'react-router-dom';
+// import dotenv from "dotenv";
 import './css/index.css';
+
+// dotenv.config() // load dotenv in your project
 
 const router = createBrowserRouter([
    {
