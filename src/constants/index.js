@@ -1,3 +1,3 @@
 export const constants = {
-   URL: import.meta.env.VITE_API_URL
+   URL: import.meta.env.VITE_VERCEL_ENV_API_URL
 }
