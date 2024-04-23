@@ -12,6 +12,7 @@ import { constants } from '../constants/index';
 export const TweetPostProvider = ({ children }) => {
    const { URL } = constants;
    console.log(URL);
+   console.log(typeof URL);
    const [tweetsPostsInDB, setTweetsPostsInDB] = useState([]);
    const { data, isPending } = useFetch(URL);
    useEffect(() => {
