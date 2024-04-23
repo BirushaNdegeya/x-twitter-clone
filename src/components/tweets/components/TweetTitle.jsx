@@ -8,10 +8,10 @@ import { useNavigate } from "react-router-dom";
  * @returns {React.JSX.Element}
  */
 
-const TweetTitle = ({ linkId, userName, userTwitter, connectedHours }) => {
+const TweetTitle = ({ userName, userTwitter, connectedHours }) => {
    const navigate = useNavigate();
    const navigateProfilePost = () => {
-      navigate(`/profile/${linkId}`);
+      navigate(`/profile/${userTwitter}`);
    }
    return (
       <div

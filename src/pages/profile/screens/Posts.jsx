@@ -21,7 +21,11 @@ const Posts = () => {
       return (
          <>
             {
-               arr.map(el => el)
+               arr.map((el, i) => (
+                  <div key={i}>
+                     {el}
+                  </div>
+                  ))
             }
          </>
       )

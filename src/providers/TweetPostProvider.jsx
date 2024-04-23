@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { TweetPostContext } from "../contexts/TweetPostContext";
 import useFetch from "../hooks/useFetch";
+import { constants } from '../constants/index';
 
 /**
  * Tweet Post PROVIDER Definition
@@ -9,10 +10,9 @@ import useFetch from "../hooks/useFetch";
  */
 
 export const TweetPostProvider = ({ children }) => {
-   // const apiKey = process.env.REACT_APP_API_URL;
-   // console.log(apiKey);
+   const { URL } = constants;
    const [tweetsPostsInDB, setTweetsPostsInDB] = useState([]);
-   const { data, isPending } = useFetch('https://662140383bf790e070b25816.mockapi.io/api/v1/posts');
+   const { data, isPending } = useFetch(URL);
    useEffect(() => {
       console.warn(data)
       setTweetsPostsInDB(data);
