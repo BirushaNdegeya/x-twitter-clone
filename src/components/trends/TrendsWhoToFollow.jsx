@@ -1,4 +1,5 @@
-import React from "react";
+import { useContext } from "react";
+import { TweetPostContext } from '../../contexts/TweetPostContext';
 import TrendsTitle from './TrendsTitle';
 import TrendsWhoToFollowBody from "./TrendsWhoToFollowBody";
 import tweetsData from '../../data/initial-data.json';
@@ -9,9 +10,10 @@ import tweetsData from '../../data/initial-data.json';
  */
 
 const TrendsWhoToFollow = () => {
+   const { } = useContext(TweetPostContext);
    const n = 2;
    const bin = n.toString('2');
-   const arr = [...tweetsData["current-user"], ...tweetsData.media]
+   const arr = tweetsData.media;
    const f = arr.map((tweet, index) => (
       {
          id: index.toString('2'),

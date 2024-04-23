@@ -12,6 +12,7 @@ const Tweet = ({tweetsDB}) => {
       <div className='flex gap-6 p-4 items-start border-b border-[#202327]'>
          <TweetAvatar
             userImage={tweetsDB.avatar}
+            userTwitter={tweetsDB.nickname}
          />
          <TweetContent
             tweetSrc={tweetsDB.image}

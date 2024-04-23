@@ -12,7 +12,7 @@ import TrendsWhoToFollow from "./trends/TrendsWhoToFollow";
 const Trends = () => {
    return (
       <aside
-         className="hidden lg:block min-h-screen border-l border-[#2F3336] relative max-w-[350px] grow py-4 pl-8"
+         className="hidden lg:block h-dvh border-l border-[#2F3336] relative max-w-[350px] grow py-4 pl-8"
       >
          <div className="w-full bg-black fixed top-0 h-16"></div>
          <TrendsInput />

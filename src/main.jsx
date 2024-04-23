@@ -23,6 +23,8 @@ import {
 } from 'react-router-dom';
 import './css/index.css';
 
+
+console.log(URL);
 const router = createBrowserRouter([
    {
       path: '/',

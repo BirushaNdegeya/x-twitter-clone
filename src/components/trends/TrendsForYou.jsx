@@ -1,9 +1,7 @@
 import React from "react";
 import TrendsTitle from "./TrendsTitle";
 import TrendsForYouBody from "./TrendsForYouBody";
-import Button from '../buttons/Button';
 import { Settings } from '../../data/ImagesIcons';
-import { Link } from "react-router-dom";
 
 /**
  * Trends For You UI Component

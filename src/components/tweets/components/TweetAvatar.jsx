@@ -7,10 +7,10 @@ import { useNavigate } from "react-router-dom";
  * @returns {React.JSX.Element} 
  */
 
-const TweetAvatar = ({ userImage, linkName }) => {
+const TweetAvatar = ({ userImage, userTwitter }) => {
    const navigate = useNavigate();
    const navigateProfilePost = () => {
-      navigate(`/profile/${linkName}`);
+      navigate(`/profile/${userTwitter}`);
    }
    return (
       <img

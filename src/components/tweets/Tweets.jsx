@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { TweetPostContext } from '../../contexts/TweetPostContext';
 import Tweet from './Tweet';
+import TweetSquelleton from "./TweetSquelleton";
 
 /**
  * Tweets UI Component
@@ -9,9 +10,20 @@ import Tweet from './Tweet';
 
 const Tweets = () => {
    const { tweetsPostsInDB, isPending } = useContext(TweetPostContext);
+   const arr = [];
+   const init = () => {
+      for (let i = 0; i < 10; i++) {
+         arr.push(<TweetSquelleton />);
+      }
+   }
+   init();
    if (isPending) {
       return (
-         <h1 className="text-3xl text-center mt-4 text-blue-500" >Loading...</h1>
+         <>
+            {
+               arr.map(el => el)
+            }
+         </>
       )
    }
    return (
